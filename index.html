@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Four hand-drawn geeky mini-zines by Jerry Gay. Print one sheet, make one cut, fold it into an 8-page book.">
+<meta property="og:title" content="Pocket Zines">
+<meta property="og:description" content="Four hand-drawn geeky mini-zines. Print, cut, fold.">
+<title>Pocket Zines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap">
+<style>
+/* layout: a desk of paper zines; covers in a row, fold steps like a strip of notes below */
+:root {
+  --bg: #f3f4f1;
+  --ink: #1b1b1b;
+  --muted: #565a55;
+  --paper: #ffffff;
+  --line: #1b1b1b;
+  --hl: #f2a93b;
+  --hl-soft: #fbe6c2;
+  --focus: #2f6fb3;
+  --display: 'Gochi Hand', 'Comic Neue', 'Segoe Print', cursive;
+  --body: 'Patrick Hand', 'Segoe Print', 'Trebuchet MS', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1e211f; --ink: #eceee9; --muted: #b3b8b1; --paper: #fbfbf8; --line: #eceee9;
+    --hl: #f2a93b; --hl-soft: #4a3a1d; --focus: #8fbcf0; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1e211f; --ink: #eceee9; --muted: #b3b8b1; --paper: #fbfbf8; --line: #eceee9;
+  --hl: #f2a93b; --hl-soft: #4a3a1d; --focus: #8fbcf0; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 19px; line-height: 1.4;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 56px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px; }
+header { display: flex; flex-direction: column; gap: 14px; max-width: 46rem; }
+.by { margin: 0; color: var(--muted); font-size: 17px; }
+h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(52px, 9vw, 92px); line-height: 0.95; text-wrap: balance; }
+h1 .mark { background: linear-gradient(transparent 58%, var(--hl-soft) 58%, var(--hl-soft) 90%, transparent 90%); }
+h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 40px; line-height: 1; }
+.lede { margin: 0; font-size: 21px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 10px 18px;
+  font: inherit; font-size: 18px; background: var(--paper); color: #1b1b1b;
+  border: 2.5px solid var(--line); border-radius: 10px 14px 9px 13px; cursor: pointer; text-decoration: none;
+  box-shadow: 3px 3px 0 var(--line); transition: transform .12s, box-shadow .12s;
+}
+.btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--line); }
+.btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--line); }
+.btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.btn.big { font-size: 20px; background: var(--hl); color: #1b1b1b; }
+.btn svg { flex-shrink: 0; }
+.status { margin: 0; min-height: 1.4em; font-size: 16px; color: var(--muted); }
+.packet { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.packet .note { color: var(--muted); font-size: 17px; }
+
+.rack { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 28px; }
+.zine { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.cover {
+  display: block; width: 100%; max-width: 100%; aspect-ratio: 260 / 404; object-fit: cover;
+  background: var(--paper); border: 1.5px solid var(--line);
+  box-shadow: 5px 6px 0 rgba(0,0,0,.12);
+}
+.zine:nth-child(odd) .cover { transform: rotate(-1.2deg); }
+.zine:nth-child(even) .cover { transform: rotate(1deg); }
+.series { margin: 4px 0 0; font-size: 15px; color: var(--muted); letter-spacing: .02em; }
+.zine h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 28px; line-height: 1.05; text-wrap: balance; }
+.zine p.blurb { margin: 0; font-size: 18px; }
+.zine .actions { margin-top: auto; display: flex; flex-direction: column; gap: 4px; }
+
+.fold { display: flex; flex-direction: column; gap: 20px; }
+.fold .settings { margin: 0; font-size: 19px; max-width: 46rem; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; counter-reset: s; }
+.steps li { display: flex; flex-direction: column; gap: 10px; min-width: 0; counter-increment: s; }
+.steps li::before { content: counter(s) "."; font-family: var(--display); font-size: 30px; line-height: 1; }
+.steps img { width: 100%; max-width: 100%; aspect-ratio: 215 / 150; background: var(--paper); border-radius: 6px; padding: 6px; }
+.steps p { margin: 0; font-size: 18px; }
+.tip { margin: 0; padding: 12px 16px; border: 2px dashed var(--line); border-radius: 8px; max-width: 46rem; font-size: 18px; }
+
+footer { display: flex; flex-direction: column; gap: 4px; color: var(--muted); font-size: 16px; border-top: 2px dashed var(--muted); padding-top: 18px; }
+footer p { margin: 0; }
+
+@media (max-width: 900px) {
+  .rack, .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) {
+  body { font-size: 18px; }
+  .rack { gap: 28px 16px; }
+  .zine h3 { font-size: 24px; }
+  .btn { font-size: 17px; padding: 8px 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+}
+</style>
+
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%;height:auto}</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="by">by jerry gay</p>
+    <h1>pocket <span class="mark">zines</span></h1>
+    <p class="lede">four tiny hand-drawn zines about software, for geeks of all ages. each one prints on a single sheet of paper. one cut and a few folds turn it into an 8-page book.</p>
+    <div class="packet">
+      <a class="btn big" href="https://drive.google.com/uc?export=download&amp;id=1f6bbBcmzHsXbX5CJPhIAnFjf63Gq-feL" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+        get all four (pdf)
+      </a>
+      <span class="note">5 pages: fold instructions + all four zines · pdfs open from google drive</span>
+    </div>
+      </header>
+
+  <section class="rack" aria-label="the zines">
+    <article class="zine">
+      <img class="cover" src="covers/wild-bugs.png" alt="cover of a pocket field guide to wild bugs: a magnifying glass over a beetle" width="260" height="404">
+      <p class="series">field guides to the digital wild · no. 1</p>
+      <h3>wild bugs</h3>
+      <p class="blurb">a naturalist's guide to the heisenbug, the bohrbug, the schrödinbug and the mandelbug. with a sightings checklist.</p>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1uAYA_jCS1OOFxoEosR3xxMx93BPKWAoA" target="_blank" rel="noopener">download pdf</a>
+      </div>
+    </article>
+    <article class="zine">
+      <img class="cover" src="covers/little-packet.png" alt="cover of the little packet who wanted to see the world: a smiling envelope carrying a bindle" width="260" height="404">
+      <p class="series">true-ish tales of the internet · no. 1</p>
+      <h3>the little packet</h3>
+      <p class="blurb">someone types “cats” and presses enter. a tiny packet sets off past a wise old DNS owl, a lot of routers, and one curious shark.</p>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1utWu8BTKNAo1DEZPHZ5N2V7upoBeH1_2" target="_blank" rel="noopener">download pdf</a>
+      </div>
+    </article>
+    <article class="zine">
+      <img class="cover" src="covers/frankenstein-ships-it.png" alt="cover of frankenstein ships it: a stitched-together creature beside a lightning bolt" width="260" height="404">
+      <p class="series">tales of software gone sideways · no. 1</p>
+      <h3>frankenstein ships it</h3>
+      <p class="blurb">a brilliant engineer stitches a system together from spare parts, ships it alone on a friday, and walks away.</p>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1ppGgbDGtsppr7LcbD7pH31Uv39Q1shxH" target="_blank" rel="noopener">download pdf</a>
+      </div>
+    </article>
+    <article class="zine">
+      <img class="cover" src="covers/tuesday-ghost.png" alt="cover of the case of the tuesday ghost: a deerstalker hat and a magnifying glass" width="260" height="404">
+      <p class="series">tales of software gone sideways · no. 2</p>
+      <h3>the case of the tuesday ghost</h3>
+      <p class="blurb">the build fails only on tuesdays, and the log file is empty. holmes follows the evidence to a culprit nobody remembered.</p>
+      <div class="actions">
+        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1HEzC44Q9gJqpN3coAY_TTqHkSjPNVBo4" target="_blank" rel="noopener">download pdf</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="fold" aria-labelledby="fold-h">
+    <h2 id="fold-h">how to fold one</h2>
+    <p class="settings">print on US letter, landscape, single-sided, at <b>100% / actual size</b>. the top row prints upside down on purpose.</p>
+    <ol class="steps">
+      <li><img src="covers/step1.png" alt="a sheet with fold lines dividing it into 8 rectangles" width="215" height="150"><p>fold the sheet into 8 rectangles: in half, in half, in half again. crease hard, then unfold.</p></li>
+      <li><img src="covers/step2.png" alt="the sheet folded in half with a short cut from the fold" width="215" height="150"><p>fold it in half left to right. starting at the fold, cut along the dashed line, one panel wide.</p></li>
+      <li><img src="covers/step3.png" alt="the paper pushed together so the cut opens into a diamond" width="215" height="150"><p>unfold, fold it top to bottom, then push the ends toward the middle so the cut opens up.</p></li>
+      <li><img src="covers/step4.png" alt="the finished little book with its cover on the front" width="215" height="150"><p>keep pushing until it collapses into a book. fold it shut, cover on the front. done!</p></li>
+    </ol>
+    <p class="tip">a little wonky is fine. that's half the charm.</p>
+  </section>
+
+  <footer>
+    <p>made with ink &amp; off-by-one errors</p>
+    <p>after the Jargon File, RFC 791, Mary Shelley and Arthur Conan Doyle · words and doodles by jerry gay</p>
+  </footer>
+</div>
+
+</body>
+</html>
