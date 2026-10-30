@@ -4,13 +4,13 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 
 ## 1. rules first (the skill)
 
-- [ ] update the pocket-zines skill so the fixes below follow written rules:
-  - [ ] drop "the first four"; list the canvas per collection, and add wild errors and from the very beginning to the collections table
-  - [ ] add a **motif register**: who owns what (genie: cat, switch · golem: bakery/bread · ftvb: grandma · …) so no motif gets used twice
-  - [ ] rule: the fix on p7 is a **scene a character acts out**, never a bullet list
-  - [ ] rule: anyone who resolves the story is **set up before** they act (at least one line earlier)
-  - [ ] the credit line always has a year
-  - [ ] write down the field-guide format (species pages, field notes, sightings back page), since it doesn't follow the fable shape
+- [x] update the pocket-zines skill so the fixes below follow written rules:
+  - [x] drop "the first four"; list the canvas per collection, and add wild errors and from the very beginning to the collections table
+  - [x] add a **motif register**: who owns what (genie: cat, switch · golem: bakery/bread · ftvb: grandma · …) so no motif gets used twice
+  - [x] rule: the fix on p7 is a **scene a character acts out**, never a bullet list
+  - [x] rule: anyone who resolves the story is **set up before** they act (at least one line earlier)
+  - [x] the credit line always has a year
+  - [x] write down the field-guide format (species pages, field notes, sightings back page), since it doesn't follow the fable shape
 
 ## 2. settle repeated motifs (decide before editing)
 

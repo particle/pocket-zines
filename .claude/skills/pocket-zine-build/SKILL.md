@@ -52,6 +52,7 @@ start only after the 8-page beat sheet is agreed with jerry (pocket-zine-story).
   | library | purple `#b48ce0` |
   | frankenstein | green `#8fcf6a` |
   | packet | blue `#5aa9e6` |
+  | from the very beginning | pink `#e88a9f` |
   | tuesday ghost | tan `#c98c5a` |
   | wild bugs | gold `#f2a93b` |
   | wild errors | coral `#e4572e` |
