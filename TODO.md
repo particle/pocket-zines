@@ -29,7 +29,7 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 ## 4. setups for characters who appear from nowhere
 
 - [x] mirror: seed the apprentice before p7 (e.g. the one courtier on p5 who doesn't smile) → p5: an unsmiling apprentice with a feather duster in the court drawing, "(except the apprentice, who just dusted it)"; p7: "the apprentice dug the mirror out of the rubble, dusted it off…"
-- [ ] genie: set up the king (p4) and the girl (p7). she could be the family's kid from p2/p3 → girl done: p3 "the baby girl clapped.", p7 "twelve years later, the girl found…" (add the baby to the p3 drawing when section 5 redraws the genie). king still open
+- [x] genie: set up the king (p4) and the girl (p7). she could be the family's kid from p2/p3 → girl done: p3 "the baby girl clapped.", p7 "twelve years later, the girl found…" (add the baby to the p3 drawing when section 5 redraws the genie). king: p2 opens "the king loved shiny new things. but in a little house, there was a little light switch."
 - [x] library: set up the librarians before their p7 meeting → p2: "the librarians kept it that way. (quietly.)"
 
 ## 5. drawings
