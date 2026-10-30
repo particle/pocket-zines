@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wild Bugs Zine</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&amp;family=Patrick+Hand&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1b1b1b}a:hover{color:#555}
+</style>
+</helmet>
+<div style="position: relative; width: 1056px; height: 816px; box-sizing: border-box; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); background: #ffffff; color: #1b1b1b; font-family: 'Patrick Hand', sans-serif; text-wrap: pretty">
+<svg aria-hidden="true" width="0" height="0" style="position: absolute; left: 0; top: 0"><defs><filter id="ink" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="wob"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="wob" scale="5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></defs></svg>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 30px 30px 24px; display: flex; flex-direction: column; gap: 6px; transform: rotate(180deg); overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the Schrödinbug</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Bugus dormiens</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="100" viewBox="0 0 224 100" role="img" aria-label="a bug peeking out of a box" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M70 42 L154 42 L154 94 L70 94 Z" fill="{{accent}}" fill-opacity="0.3"></path>
+<path d="M68 34 L150 14"></path>
+<circle cx="102" cy="36" r="7" fill="#ffffff"></circle>
+<circle cx="122" cy="36" r="7" fill="#ffffff"></circle>
+<circle cx="104" cy="37" r="2.5" fill="#1b1b1b"></circle>
+<circle cx="124" cy="37" r="2.5" fill="#1b1b1b"></circle>
+<path d="M98 30 q-6 -12 -16 -14 M126 30 q6 -10 14 -10"></path>
+<text x="112" y="72" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="12" fill="#1b1b1b" stroke="none">DO NOT OBSERVE</text>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">sleeps in old code for years. then someone reads it and says “wait, how did this ever work?” and it stops working. immediately.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> legacy code nobody dares to touch</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> ★★★☆☆</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 5 —</p>
+</div>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 6px; transform: rotate(180deg); overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the Heisenbug</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Bugus observatus-fugit</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="100" viewBox="0 0 224 100" role="img" aria-label="a faint dotted outline of a bug, half vanished" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<g stroke-dasharray="3 7">
+<ellipse cx="112" cy="62" rx="26" ry="30"></ellipse>
+<circle cx="112" cy="24" r="11"></circle>
+<path d="M88 50 l-18 -8 M86 64 l-20 0 M89 78 l-17 12 M136 50 l18 -8 M138 64 l20 0 M135 78 l17 12"></path>
+<path d="M106 14 q-6 -10 -14 -10 M118 14 q6 -10 14 -10"></path>
+</g>
+<text x="176" y="40" font-family="Gochi Hand, cursive" font-size="34" fill="{{accent}}" stroke="#1b1b1b" stroke-width="1">?</text>
+<text x="34" y="92" font-family="Gochi Hand, cursive" font-size="22" fill="#1b1b1b" stroke="none">poof</text>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">vanishes the moment you look at it. add a print statement: gone. delete the print statement: back. it knows.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> race conditions, timing, 3am</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> ★★★★☆</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 4 —</p>
+</div>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 6px; transform: rotate(180deg); overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the Bohrbug</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Bugus reliabilis</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="100" viewBox="0 0 224 100" role="img" aria-label="a smiling round spotted beetle" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M88 50 l-18 -8 M86 64 l-20 0 M89 78 l-17 12 M136 50 l18 -8 M138 64 l20 0 M135 78 l17 12"></path>
+<ellipse cx="112" cy="62" rx="26" ry="30" fill="{{accent}}" fill-opacity="0.35"></ellipse>
+<path d="M112 34 L112 92"></path>
+<circle cx="101" cy="56" r="4" fill="#1b1b1b"></circle>
+<circle cx="124" cy="72" r="4" fill="#1b1b1b"></circle>
+<path d="M106 14 q-6 -10 -14 -10 M118 14 q6 -10 14 -10"></path>
+<circle cx="112" cy="24" r="11" fill="#ffffff"></circle>
+<circle cx="108" cy="22" r="1.6" fill="#1b1b1b"></circle>
+<circle cx="116" cy="22" r="1.6" fill="#1b1b1b"></circle>
+<path d="M107 27 q5 4 10 0"></path>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">the friendly one. shows up every single time, in the same spot, like a good dog. honestly? kind of a sweetheart.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> loops with &lt; where you meant &lt;=</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> ★☆☆☆☆</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 3 —</p>
+</div>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 30px; display: flex; flex-direction: column; gap: 8px; transform: rotate(180deg); overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">how to use this guide</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.25">bugs are shy. they hide in the one line you were <i>sure</i> was fine.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="104" viewBox="0 0 224 104" role="img" aria-label="a rubber duck" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M66 70 C 66 98, 150 100, 162 74 C 168 60, 152 56, 140 62 C 146 38, 128 24, 112 30 C 96 36, 96 54, 106 62 C 90 60, 68 58, 66 70 Z" fill="{{accent}}" fill-opacity="0.4"></path>
+<circle cx="118" cy="42" r="2.5" fill="#1b1b1b"></circle>
+<path d="M100 44 l-16 3 l16 6 Z" fill="#ffffff"></path>
+<path d="M114 76 q16 -10 30 2"></path>
+<path d="M40 96 q20 -6 40 0 t40 0 t40 0 t40 0" stroke-width="1.5"></path>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.3"><b>pack:</b> ☐ a rubber duck<br>☐ snacks ☐ patience</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.3"><b>leave at home:</b> the deadline</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 2 —</p>
+</div>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 30px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the Mandelbug</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Bugus fractalis</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="104" viewBox="0 0 224 104" role="img" aria-label="a bug with a smaller bug inside it, and a smaller bug inside that" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M84 48 l-20 -8 M82 64 l-22 0 M85 80 l-18 12 M140 48 l20 -8 M142 64 l22 0 M139 80 l18 12"></path>
+<path d="M106 16 q-6 -10 -14 -10 M118 16 q6 -10 14 -10"></path>
+<circle cx="112" cy="24" r="10" fill="#ffffff"></circle>
+<ellipse cx="112" cy="64" rx="30" ry="32" fill="{{accent}}" fill-opacity="0.2"></ellipse>
+<path d="M98 58 l-8 -4 M98 66 l-9 0 M98 74 l-8 5 M126 58 l8 -4 M126 66 l9 0 M126 74 l8 5" stroke-width="1.8"></path>
+<ellipse cx="112" cy="66" rx="14" ry="16" fill="{{accent}}" fill-opacity="0.4" stroke-width="2"></ellipse>
+<path d="M106 64 l-4 -2 M106 68 l-4 1 M118 64 l4 -2 M118 68 l4 1" stroke-width="1.2"></path>
+<ellipse cx="112" cy="67" rx="6" ry="7" fill="{{accent}}" fill-opacity="0.7" stroke-width="1.5"></ellipse>
+<circle cx="112" cy="67" r="1.6" fill="#1b1b1b"></circle>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">so tangled its cause looks like pure chaos. zoom in: more bug. zoom in again: still bug. it's bugs all the way down.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> systems with 40 microservices</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> ★★★★★</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 6 —</p>
+</div>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 8px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">field notes: the first bug</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.25">sept 9, 1947. operators of the Harvard Mark II computer found an actual moth stuck in a relay. so they taped it into the logbook.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="100" viewBox="0 0 224 100" role="img" aria-label="a moth taped down with two strips of tape" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M112 50 C 90 18, 58 24, 64 50 C 68 66, 96 62, 112 56"></path>
+<path d="M112 58 C 96 66, 78 82, 90 88 C 102 94, 110 74, 112 62"></path>
+<path d="M112 50 C 134 18, 166 24, 160 50 C 156 66, 128 62, 112 56"></path>
+<path d="M112 58 C 128 66, 146 82, 134 88 C 122 94, 114 74, 112 62"></path>
+<ellipse cx="112" cy="58" rx="4" ry="17" fill="#1b1b1b"></ellipse>
+<path d="M110 42 q-6 -14 -16 -16 M114 42 q6 -14 16 -16"></path>
+<rect x="40" y="30" width="46" height="14" transform="rotate(-24 63 37)" fill="{{accent}}" fill-opacity="0.45" stroke-width="1.5"></rect>
+<rect x="138" y="72" width="46" height="14" transform="rotate(-24 161 79)" fill="{{accent}}" fill-opacity="0.45" stroke-width="1.5"></rect>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.25">engineers had already been calling glitches “bugs” for decades. but this one had wings.</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 7 —</p>
+</div>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 8px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">my sightings</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6">☐ bohrbug<br>☐ heisenbug<br>☐ schrödinbug<br>☐ mandelbug<br>☐ ____________<br><span style="font-size: 14px; color: #444">(new species? name it after yourself.)</span></p>
+<div style="border: 2px solid #1b1b1b; border-radius: 6px; padding: 10px 9px; font-size: 15px; line-height: 1.25; background: #ffffff">please do not release bugs into production. catch &amp; release is <span style="white-space: nowrap"><b>not</b> recommended.</span></div>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555; line-height: 1.35">made with ink &amp; off-by-one errors<br>after the Jargon File · by jerry gay</p>
+</div>
+
+<div style="box-sizing: border-box; width: 264px; height: 408px; padding: 26px 30px 30px 24px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; text-align: center">
+<p style="margin: 0; font-size: 18px">a pocket field guide to</p>
+<h1 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 58px; line-height: 0.95; font-weight: 400">WILD BUGS</h1>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="112" viewBox="0 0 224 136" role="img" aria-label="a magnifying glass over a small beetle" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<g transform="translate(100 64) scale(0.62) translate(-112 -60)">
+<path d="M88 50 l-18 -8 M86 64 l-20 0 M89 78 l-17 12 M136 50 l18 -8 M138 64 l20 0 M135 78 l17 12"></path>
+<ellipse cx="112" cy="62" rx="26" ry="30" fill="{{accent}}" fill-opacity="0.45"></ellipse>
+<path d="M112 34 L112 92"></path>
+<circle cx="101" cy="56" r="4" fill="#1b1b1b"></circle>
+<circle cx="124" cy="72" r="4" fill="#1b1b1b"></circle>
+<path d="M106 14 q-6 -10 -14 -10 M118 14 q6 -10 14 -10"></path>
+<circle cx="112" cy="24" r="11" fill="#ffffff"></circle>
+<circle cx="108" cy="22" r="1.6" fill="#1b1b1b"></circle>
+<circle cx="116" cy="22" r="1.6" fill="#1b1b1b"></circle>
+</g>
+<circle cx="100" cy="64" r="44" stroke-width="4"></circle>
+<path d="M132 96 L166 130" stroke-width="10"></path>
+<path d="M70 44 q8 -12 22 -16" stroke-width="2"></path>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">how to spot, identify &amp; (maybe) catch the creatures living in your code</p>
+<p style="margin: auto 0 0; font-size: 13px; color: #555">field guides to the digital wild · no. 1</p>
+</div>
+
+<div aria-hidden="true" style="position: absolute; left: 264px; top: 407px; width: 528px; border-top: 2px dashed {{cut}}"></div>
+<p aria-hidden="true" style="position: absolute; left: 470px; top: 410px; width: 116px; margin: 0; font-size: 11px; text-align: center; color: {{cutSoft}}">cut along the dashes</p>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#f2a93b","options":["#f2a93b","#5aa9e6","#e4572e","#9e9e9e"]},"showGuides":{"editor":"boolean","default":true},"$preview":{"width":1056,"height":816}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const guides = this.props.showGuides ?? true;
+    return {
+      accent: this.props.accent ?? '#f2a93b',
+      guide: guides ? '#c4c4c4' : 'transparent',
+      cut: guides ? '#6b6b6b' : 'transparent',
+      cutSoft: guides ? '#a8a8a8' : 'transparent'
+    };
+  }
+}
+</script>
+</body>
+</html>
