@@ -1,0 +1,60 @@
+# pocket zines: fix list
+
+from the 2026-10-30 critique of all ten zines. the order runs from cheapest and most foundational to most expensive, so each step sets up the next: settle the rules, then make small fixes, then the structural ones, then the rewrites, then ship. every changed sheet still goes through render → check → review before it's published.
+
+## 1. rules first (the skill)
+
+- [ ] update the pocket-zines skill so the fixes below follow written rules:
+  - [ ] drop "the first four"; list the canvas per collection, and add wild errors and from the very beginning to the collections table
+  - [ ] add a **motif register**: who owns what (genie: cat, switch · golem: bakery/bread · ftvb: grandma · …) so no motif gets used twice
+  - [ ] rule: the fix on p7 is a **scene a character acts out**, never a bullet list
+  - [ ] rule: anyone who resolves the story is **set up before** they act (at least one line earlier)
+  - [ ] the credit line always has a year
+  - [ ] write down the field-guide format (species pages, field notes, sightings back page), since it doesn't follow the fable shape
+
+## 2. settle repeated motifs (decide before editing)
+
+- [ ] "very helpful": keep it in the genie (p5); reword golem p6
+- [ ] "isn't evil" / "wasn't wicked": frankenstein says it twice (p2, p6) and golem once (p6). keep one
+- [ ] bread: golem keeps the bakery; give the library's girl something other than a bread recipe (this also changes library p7's "bake the bread" rule and the p8 callback)
+- [ ] grandma: from the very beginning keeps grandma; the library's girl looks for someone else's lost thing
+
+## 3. quick text fixes (no story change)
+
+- [ ] add the year to the credit line on: wild bugs (jargon file), genie (arabian nights), golem (golem of prague), tuesday ghost (conan doyle)
+- [ ] genie cover tagline: "a fable about asking nicely" doesn't match the moral (keep the switch). pick a new one
+- [ ] ftvb p3: "letter by letter" / "one letter at a time" describes digits. reword it (or keep it on purpose as the kid's view)
+- [ ] ftvb p8: "2026-10-30-something" will look dated. consider "today's date, YYYY-MM-DD"
+
+## 4. setups for characters who appear from nowhere
+
+- [ ] mirror: seed the apprentice before p7 (e.g. the one courtier on p5 who doesn't smile)
+- [ ] genie: set up the king (p4) and the girl (p7). she could be the family's kid from p2/p3
+- [ ] library: set up the librarians before their p7 meeting
+
+## 5. drawings
+
+- [ ] packet: one consistent character on every page (the cover's legs and face); the cover's bindle reads as a balloon
+- [ ] genie: the coiled body reads as stacked bread rolls; simplify it into smoke
+- [ ] library p5: "copy 10" reads as a fan; make it read as a hand with too many fingers
+- [ ] mirror p6: the dragon is barely there; make it visible
+- [ ] wild bugs p6: the mandelbug reads as a spider with a target; draw bugs nested inside bugs
+- [ ] wild errors: the cover's bigfoot never appears inside. make the 404 page the cryptid ("you've seen its sign…") instead of the empty nest
+
+## 6. structural fixes (beat sheet in chat first)
+
+- [ ] little packet: keep the protagonist in the story past p6; pay off "see the world" and the TTL-at-zero setup directly, not just by implication
+- [ ] golem: one golem on one journey instead of jumping between prague and today each page; p3 becomes an event, not narration; p7 becomes the rabbi's trick acted out, not a list
+- [ ] library: give the press (or the library) a goal; keep the girl in the story past p6; p7 becomes the librarians acting, not a list
+
+## 7. rewrites (full process: 2–3 pitches → beat sheet → build)
+
+- [ ] tuesday ghost: one culprit (service account, plugin or key, pick one); watson and lestrade each do something; set up moriarty or drop him; p5 becomes an event, not an explainer; back page in "the moral" format with a callback; new cover (the deerstalker reads as a croissant)
+- [ ] frankenstein ships it: decide whose story it is; show who comes back in "take two"; pay off "two brains"; keep the voice steady (it switches from "he" to "you" on p6); p3 and p7 become scenes. keep "comic sans" and "you ghosted it"
+
+## 8. ship
+
+- [ ] render and check every changed sheet (fit, widows, default printing, look at every page)
+- [ ] review pdfs → publish canvases
+- [ ] re-render the changed pdfs, rebuild `pocket-zines-all-ten.pdf`, and re-crop any changed covers
+- [ ] update index.html blurbs if taglines changed; check locally, push, confirm on the live site
