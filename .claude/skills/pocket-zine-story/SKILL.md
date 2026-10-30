@@ -83,17 +83,17 @@ who owns what. a motif belongs to one zine; nobody else uses it, in the text or 
 | the genie in the light switch | the cat, the light switch, the king and his decree, the attic tinkerer, smoke, the phrase "very helpful" |
 | the golem | the bakery and bread, the baker (and his mop), the flood, clay, the slip of paper, the developer who goes for coffee |
 | the mirror | the queen, the castle and its wall, the dragon, thumbs up / thumbs down, the court, the apprentice |
-| the library | books and shelves, the printing press, the hand with too many fingers, the cellar, the librarians |
+| the library | books and shelves, the printing press, the hand with too many fingers, the cellar, the librarians, the uncle's fishing map |
 | the little packet | the DNS owl, the routers, the shark and the undersea cable, the handshake, the TTL countdown |
 | from the very beginning | grandma (and grandpa), the birthday, the photo slideshow, the old dog and the puppy |
-| frankenstein ships it | the lab, lightning, pitchforks and torches, comic sans, "you ghosted it" |
+| frankenstein ships it | the lab, lightning, pitchforks and torches, comic sans, "you ghosted it", "isn't evil" (once, on p6) |
 | the tuesday ghost | holmes, watson and lestrade, fog, tea, the ghost, keys that expire "like milk" |
 | wild bugs | the moth in the logbook, the rubber duck |
 | wild errors | the teapot, the migrating bird |
 
 the field guides share their format (latin names, habitat, catch difficulty, the sightings checklist); that's the collection's, not a motif.
 
-known clashes being fixed (TODO.md, section 2): the library's girl currently looks for her grandmother's bread recipe (bread is the golem's, grandma is from the very beginning's), and "isn't evil" / "wasn't wicked" appears in both frankenstein and the golem (one keeps it, not decided yet). update this table when they're settled.
+settled clashes (TODO.md, section 2): the golem no longer says "very helpful" or "wasn't wicked"; frankenstein says "isn't evil" once (p6); the library's girl looks for her uncle's map to the best fishing spot instead of her grandmother's bread recipe (that change lands with the library rebuild in section 6).
 
 ## the field-guide format
 

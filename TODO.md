@@ -14,10 +14,10 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 
 ## 2. settle repeated motifs (decide before editing)
 
-- [ ] "very helpful": keep it in the genie (p5); reword golem p6
-- [ ] "isn't evil" / "wasn't wicked": frankenstein says it twice (p2, p6) and golem once (p6). keep one
-- [ ] bread: golem keeps the bakery; give the library's girl something other than a bread recipe (this also changes library p7's "bake the bread" rule and the p8 callback)
-- [ ] grandma: from the very beginning keeps grandma; the library's girl looks for someone else's lost thing
+- [x] "very helpful": keep it in the genie (p5); reword golem p6 → "it never asked for any of it. it never said no to any of it."
+- [x] "isn't evil" / "wasn't wicked": frankenstein says it twice (p2, p6) and golem once (p6). keep one → frankenstein p6 keeps it; p2 becomes "dr. frankenstein means well."; golem drops it
+- [x] bread: golem keeps the bakery; give the library's girl something other than a bread recipe (this also changes library p7's "bake the bread" rule and the p8 callback) → her uncle's map to the best fishing spot. p6: "four thousand maps to the best fishing spot. nobody who drew them had ever been there." rule: "walk the road before you print the map." callback: "(the fish were right where he said.)" applied in section 6
+- [x] grandma: from the very beginning keeps grandma; the library's girl looks for someone else's lost thing → her uncle's (see above)
 
 ## 3. quick text fixes (no story change)
 
