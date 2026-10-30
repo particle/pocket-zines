@@ -21,8 +21,8 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 
 ## 3. quick text fixes (no story change)
 
-- [ ] add the year to the credit line on: wild bugs (jargon file), genie (arabian nights), golem (golem of prague), tuesday ghost (conan doyle) → done: jargon file 1975, golem of prague 1847, conan doyle 1887, and wild errors "RFC 9110, 2022 & RFC 2324, 1998". genie still open
-- [ ] genie cover tagline: "a fable about asking nicely" doesn't match the moral (keep the switch). pick a new one
+- [x] add the year to the credit line on: wild bugs (jargon file), genie (arabian nights), golem (golem of prague), tuesday ghost (conan doyle) → done: jargon file 1975, golem of prague 1847, conan doyle 1887, and wild errors "RFC 9110, 2022 & RFC 2324, 1998". genie becomes "after aladdin, 1712" (the lamp genie, whose wishes are unlimited; three wishes is a later trope). the site footer still says "after the arabian nights": fix in section 8
+- [x] genie cover tagline: "a fable about asking nicely" doesn't match the moral (keep the switch). pick a new one → "a fable about switches and wishes"
 - [x] ftvb p3: "letter by letter" / "one letter at a time" describes digits. reword it (or keep it on purpose as the kid's view) → "digit by digit" (no sort in the story hinges on a dash). the site blurb still says "letter by letter": fix in section 8
 - [x] ftvb p8: "2026-10-30-something" will look dated. consider "today's date, YYYY-MM-DD" → "try it: write your birthday the long way, like 2016-04-09, then name a photo with it."
 
