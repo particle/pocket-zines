@@ -34,7 +34,7 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 
 ## 5. drawings
 
-- [ ] packet: one consistent character on every page (the cover's legs and face); the cover's bindle reads as a balloon
+- [x] packet: one consistent character on every page (the cover's legs and face); the cover's bindle reads as a balloon → same packet (face, legs, stamp) on the cover, p2–p6 and p8, newly on p3 and p4; stamp counts 64 → 55; the bindle now hangs a polka-dot bundle from a stick. p7 waits for section 6
 - [ ] genie: the coiled body reads as stacked bread rolls; simplify it into smoke
 - [ ] library p5: "copy 10" reads as a fan; make it read as a hand with too many fingers
 - [ ] mirror p6: the dragon is barely there; make it visible
