@@ -11,11 +11,14 @@ start only after the 8-page beat sheet is agreed with jerry (pocket-zine-story).
 
 - `sources/<name>.dc.html` holds every sheet's source. **start a new zine by copying an existing source** (`little-packet.dc.html` and `genie-in-the-light-switch.dc.html` are the cleanest) and replacing the content. every format value below is already right in them.
 - `pdfs/<name>.pdf` holds the print files, `covers/<name>.png` the site covers, `index.html` is the site.
-- the sheets also live as artboards on two Design canvases, where jerry looks at and edits them:
-  - first four: https://claude.ai/artifact/XUkVFWG5BA1689WQi6sr1x
+- the sheets also live as artboards on Design canvases, where jerry looks at and edits them. **one canvas per collection**, named for the collection, with its zines as artboards in shelf order (`Main.dc.html` is no. 1):
   - once upon a model: https://claude.ai/artifact/NrxC9fSXmhNd5rXfEKwGo7
+  - true-ish tales of the internet: https://claude.ai/artifact/REBbM8d3pj7Cwn31jes3aL
+  - tales of software gone sideways: https://claude.ai/artifact/3KJ47Vt1eqpFVxa5YvqQuE
+  - field guides to the digital wild: https://claude.ai/artifact/9j2KkQhFbUszZCKqLmgnZH
 
-  add a new zine as an artboard on the canvas that holds its collection (or a new canvas for a new collection), so jerry can review it there. `sources/` is the copy of record in git, so keep the two in sync.
+  add a new zine as an artboard on its collection's canvas, so jerry can review it there. a new collection gets a new canvas with the same name as its shelf (add it to this list). `sources/` is the copy of record in git, so keep the two in sync.
+  - the old mixed "devcon hopewell mini-zines" canvas (https://claude.ai/artifact/XUkVFWG5BA1689WQi6sr1x) still holds older copies plus two sheets not on any shelf yet (tiny habits, rapunzel). don't add new zines there.
 - `.claude/skills/pocket-zine-build/scripts/zine.py` renders and checks a sheet. its fonts are bundled.
 
 ## the sheet format
@@ -50,6 +53,8 @@ start only after the 8-page beat sheet is agreed with jerry (pocket-zine-story).
   | frankenstein | green `#8fcf6a` |
   | packet | blue `#5aa9e6` |
   | tuesday ghost | tan `#c98c5a` |
+  | wild bugs | gold `#f2a93b` |
+  | wild errors | coral `#e4572e` |
 
   pick something distinct for a new zine, but a shared color within a collection is fine.
 - **every drawing must read without its caption.** draw whole, recognizable things. a lone cat paw read as a three-eyed face; a whole cat on its back legs pawing the switch read instantly.
