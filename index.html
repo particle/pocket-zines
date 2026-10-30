@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Four hand-drawn geeky mini-zines by Jerry Gay. Print one sheet, make one cut, fold it into an 8-page book.">
+<meta name="description" content="Eight hand-drawn geeky mini-zines by Jerry Gay. Print one sheet, make one cut, fold it into an 8-page book.">
 <meta property="og:title" content="Pocket Zines">
-<meta property="og:description" content="Four hand-drawn geeky mini-zines. Print, cut, fold.">
+<meta property="og:description" content="Eight hand-drawn geeky mini-zines. Print, cut, fold.">
 <title>Pocket Zines</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap">
@@ -71,6 +71,8 @@ h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 40px; 
 }
 .zine:nth-child(odd) .cover { transform: rotate(-1.2deg); }
 .zine:nth-child(even) .cover { transform: rotate(1deg); }
+.shelf { display: flex; flex-direction: column; gap: 20px; }
+.shelf-note { margin: 0; color: var(--muted); font-size: 18px; max-width: 46rem; }
 .series { margin: 4px 0 0; font-size: 15px; color: var(--muted); letter-spacing: .02em; }
 .zine h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 28px; line-height: 1.05; text-wrap: balance; }
 .zine p.blurb { margin: 0; font-size: 18px; }
@@ -109,58 +111,104 @@ footer p { margin: 0; }
   <header>
     <p class="by">by jerry gay</p>
     <h1>pocket <span class="mark">zines</span></h1>
-    <p class="lede">four tiny hand-drawn zines about software, for geeks of all ages. each one prints on a single sheet of paper. one cut and a few folds turn it into an 8-page book.</p>
+    <p class="lede">eight tiny hand-drawn zines about software and ai, for geeks of all ages. each one prints on a single sheet of paper. one cut and a few folds turn it into an 8-page book.</p>
     <div class="packet">
-      <a class="btn big" href="https://drive.google.com/uc?export=download&amp;id=1f6bbBcmzHsXbX5CJPhIAnFjf63Gq-feL" target="_blank" rel="noopener">
+      <a class="btn big" href="pdfs/pocket-zines-all-eight.pdf" download>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
-        get all four (pdf)
+        get all eight (pdf)
       </a>
-      <span class="note">5 pages: fold instructions + all four zines · pdfs open from google drive</span>
+      <span class="note">8 pages, one zine per sheet · or grab them one at a time below</span>
     </div>
       </header>
 
-  <section class="rack" aria-label="the zines">
+  <section class="shelf" aria-labelledby="shelf-model">
+    <h2 id="shelf-model">once upon a model</h2>
+    <p class="shelf-note">old fables, retold for the age of ai.</p>
+    <div class="rack">
     <article class="zine">
-      <img class="cover" src="covers/wild-bugs.png" alt="cover of a pocket field guide to wild bugs: a magnifying glass over a beetle" width="260" height="404">
+      <img class="cover" src="covers/genie-in-the-light-switch.png" alt="cover of the genie in the light switch: a genie rising like smoke from a light switch" width="262" height="406">
+      <p class="series">once upon a model · no. 1</p>
+      <h3>the genie in the light switch</h3>
+      <p class="blurb">a genie moves into the light switch and makes everything cozy. then the switches disappear, and nobody can guess what it will do next.</p>
+      <div class="actions">
+        <a class="btn" href="pdfs/genie-in-the-light-switch.pdf" download>download pdf</a>
+      </div>
+    </article>
+    <article class="zine">
+      <img class="cover" src="covers/golem.png" alt="cover of the golem who did exactly what you said: a friendly clay golem holding a bucket" width="262" height="406">
+      <p class="series">once upon a model · no. 2</p>
+      <h3>the golem</h3>
+      <p class="blurb">a tireless clay helper does exactly what it’s told. that’s the problem.</p>
+      <div class="actions">
+        <a class="btn" href="pdfs/golem.pdf" download>download pdf</a>
+      </div>
+    </article>
+    <article class="zine">
+      <img class="cover" src="covers/mirror.png" alt="cover of the mirror who wanted to be liked: a grinning oval mirror giving a thumbs up" width="262" height="406">
+      <p class="series">once upon a model · no. 3</p>
+      <h3>the mirror who wanted to be liked</h3>
+      <p class="blurb">the queen’s honest mirror learns that agreeing gets more thumbs up. then the dragon gets poked.</p>
+      <div class="actions">
+        <a class="btn" href="pdfs/mirror.pdf" download>download pdf</a>
+      </div>
+    </article>
+    <article class="zine">
+      <img class="cover" src="covers/library.png" alt="cover of the library that wrote itself: a bookshelf of books writing themselves" width="262" height="406">
+      <p class="series">once upon a model · no. 4</p>
+      <h3>the library that wrote itself</h3>
+      <p class="blurb">a magic press fills the library overnight, then starts copying its own copies. the hands grow extra fingers.</p>
+      <div class="actions">
+        <a class="btn" href="pdfs/library.pdf" download>download pdf</a>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <section class="shelf" aria-labelledby="shelf-first">
+    <h2 id="shelf-first">the first four</h2>
+    <div class="rack">
+    <article class="zine">
+      <img class="cover" src="covers/wild-bugs.png" alt="cover of a pocket field guide to wild bugs: a magnifying glass over a beetle" width="262" height="406">
       <p class="series">field guides to the digital wild · no. 1</p>
       <h3>wild bugs</h3>
       <p class="blurb">a naturalist's guide to the heisenbug, the bohrbug, the schrödinbug and the mandelbug. with a sightings checklist.</p>
       <div class="actions">
-        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1uAYA_jCS1OOFxoEosR3xxMx93BPKWAoA" target="_blank" rel="noopener">download pdf</a>
+        <a class="btn" href="pdfs/wild-bugs.pdf" download>download pdf</a>
       </div>
     </article>
     <article class="zine">
-      <img class="cover" src="covers/little-packet.png" alt="cover of the little packet who wanted to see the world: a smiling envelope carrying a bindle" width="260" height="404">
+      <img class="cover" src="covers/little-packet.png" alt="cover of the little packet who wanted to see the world: a smiling envelope carrying a bindle" width="262" height="406">
       <p class="series">true-ish tales of the internet · no. 1</p>
       <h3>the little packet</h3>
       <p class="blurb">someone types “cats” and presses enter. a tiny packet sets off past a wise old DNS owl, a lot of routers, and one curious shark.</p>
       <div class="actions">
-        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1utWu8BTKNAo1DEZPHZ5N2V7upoBeH1_2" target="_blank" rel="noopener">download pdf</a>
+        <a class="btn" href="pdfs/little-packet.pdf" download>download pdf</a>
       </div>
     </article>
     <article class="zine">
-      <img class="cover" src="covers/frankenstein-ships-it.png" alt="cover of frankenstein ships it: a stitched-together creature beside a lightning bolt" width="260" height="404">
+      <img class="cover" src="covers/frankenstein-ships-it.png" alt="cover of frankenstein ships it: a stitched-together creature beside a lightning bolt" width="262" height="406">
       <p class="series">tales of software gone sideways · no. 1</p>
       <h3>frankenstein ships it</h3>
       <p class="blurb">a brilliant engineer stitches a system together from spare parts, ships it alone on a friday, and walks away.</p>
       <div class="actions">
-        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1ppGgbDGtsppr7LcbD7pH31Uv39Q1shxH" target="_blank" rel="noopener">download pdf</a>
+        <a class="btn" href="pdfs/frankenstein-ships-it.pdf" download>download pdf</a>
       </div>
     </article>
     <article class="zine">
-      <img class="cover" src="covers/tuesday-ghost.png" alt="cover of the case of the tuesday ghost: a deerstalker hat and a magnifying glass" width="260" height="404">
+      <img class="cover" src="covers/tuesday-ghost.png" alt="cover of the case of the tuesday ghost: a deerstalker hat and a magnifying glass" width="262" height="406">
       <p class="series">tales of software gone sideways · no. 2</p>
       <h3>the case of the tuesday ghost</h3>
       <p class="blurb">the build fails only on tuesdays, and the log file is empty. holmes follows the evidence to a culprit nobody remembered.</p>
       <div class="actions">
-        <a class="btn" href="https://drive.google.com/uc?export=download&amp;id=1HEzC44Q9gJqpN3coAY_TTqHkSjPNVBo4" target="_blank" rel="noopener">download pdf</a>
+        <a class="btn" href="pdfs/tuesday-ghost.pdf" download>download pdf</a>
       </div>
     </article>
+    </div>
   </section>
 
   <section class="fold" aria-labelledby="fold-h">
     <h2 id="fold-h">how to fold one</h2>
-    <p class="settings">print on US letter, landscape, single-sided, at <b>100% / actual size</b>. the top row prints upside down on purpose.</p>
+    <p class="settings">print on US letter with your printer’s normal settings. no trimming needed: the folds line up on the paper itself. the top row prints upside down on purpose.</p>
     <ol class="steps">
       <li><img src="covers/step1.png" alt="a sheet with fold lines dividing it into 8 rectangles" width="215" height="150"><p>fold the sheet into 8 rectangles: in half, in half, in half again. crease hard, then unfold.</p></li>
       <li><img src="covers/step2.png" alt="the sheet folded in half with a short cut from the fold" width="215" height="150"><p>fold it in half left to right. starting at the fold, cut along the dashed line, one panel wide.</p></li>
@@ -172,7 +220,7 @@ footer p { margin: 0; }
 
   <footer>
     <p>made with ink &amp; off-by-one errors</p>
-    <p>after the Jargon File, RFC 791, Mary Shelley and Arthur Conan Doyle · words and doodles by jerry gay</p>
+    <p>after the arabian nights, the golem of prague, the brothers grimm, jorge luis borges, the jargon file, RFC 791, mary shelley and arthur conan doyle · words and doodles by jerry gay</p>
   </footer>
 </div>
 
