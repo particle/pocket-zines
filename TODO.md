@@ -38,7 +38,7 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 - [x] genie: the coiled body reads as stacked bread rolls; simplify it into smoke → one smooth s-curve smoke body with a curl at the switch, open arms instead of crossed rolls, on all four pages; p3 also gets the clapping baby
 - [x] library p5: "copy 10" reads as a fan; make it read as a hand with too many fingers → eleven uneven fingers side by side on a palm, one crooked, like copies 1 and 5
 - [x] mirror p6: the dragon is barely there; make it visible → a whole smug dragon (horn, wing, back spikes, smoke from its nose) sits beside the rubble
-- [ ] wild bugs p6: the mandelbug reads as a spider with a target; draw bugs nested inside bugs
+- [x] wild bugs p6: the mandelbug reads as a spider with a target; draw bugs nested inside bugs → three whole bugs (head, eyes, antennae, legs), each inside the last one's body
 - [ ] wild errors: the cover's bigfoot never appears inside. make the 404 page the cryptid ("you've seen its sign…") instead of the empty nest
 
 ## 6. structural fixes (beat sheet in chat first)
