@@ -86,14 +86,14 @@ who owns what. a motif belongs to one zine; nobody else uses it, in the text or 
 | the library | books and shelves, the printing press, the hand with too many fingers, the cellar, the librarians, the uncle's fishing map |
 | the little packet | the DNS owl, the routers, the shark and the undersea cable, the handshake, the TTL countdown |
 | from the very beginning | grandma (and grandpa), the birthday, the photo slideshow, the old dog and the puppy |
-| frankenstein ships it | the lab, lightning, pitchforks and torches, comic sans, "you ghosted it", "isn't evil" (once, on p6) |
+| frankenstein ships it | the lab, lightning, pitchforks and torches, comic sans (and helvetica), two brains, the on-call list, "you ghosted me" |
 | the tuesday ghost | holmes, watson and lestrade, moriarty, fog, tea (and tacos), the ghost, the key register, keys that expire "like milk", payroll |
 | wild bugs | the moth in the logbook, the rubber duck |
 | wild errors | the teapot, the migrating bird, the hairy cryptid and its crossing sign |
 
 the field guides share their format (latin names, habitat, catch difficulty, the sightings checklist); that's the collection's, not a motif.
 
-settled clashes (TODO.md, section 2): the golem no longer says "very helpful" or "wasn't wicked"; frankenstein says "isn't evil" once (p6); the library's girl looks for her uncle's map to the best fishing spot instead of her grandmother's bread recipe.
+settled clashes (TODO.md, section 2): the golem no longer says "very helpful" or "wasn't wicked"; frankenstein's rewrite dropped "isn't evil" entirely, so nobody uses it; the library's girl looks for her uncle's map to the best fishing spot instead of her grandmother's bread recipe.
 
 ## the field-guide format
 

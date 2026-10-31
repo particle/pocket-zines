@@ -50,7 +50,7 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 ## 7. rewrites (full process: 2–3 pitches → beat sheet → build)
 
 - [x] tuesday ghost: one culprit (service account, plugin or key, pick one); watson and lestrade each do something; set up moriarty or drop him; p5 becomes an event, not an explainer; back page in "the moral" format with a callback; new cover (the deerstalker reads as a croissant) → rewritten as "moriarty's key": watson finds the key in her register (p4), a stakeout shows why ghost.log is empty (p5), lestrade cancels it too fast and breaks payroll (p6), holmes finds moriarty's 2015 note asking for one key per job (p7); new cover; "(tuesdays were saved. watson brought tacos.)"
-- [ ] frankenstein ships it: design the creature's head once (hair, stitches, bolts) and keep it on every page, changing only the expression; decide whose story it is; show who comes back in "take two"; pay off "two brains"; keep the voice steady (it switches from "he" to "you" on p6); p3 and p7 become scenes. keep "comic sans" and "you ghosted it"
+- [x] frankenstein ships it: design the creature's head once (hair, stitches, bolts) and keep it on every page, changing only the expression; decide whose story it is; show who comes back in "take two"; pay off "two brains"; keep the voice steady (it switches from "he" to "you" on p6); p3 and p7 become scenes. keep "comic sans" and "you ghosted it" → rewritten as the creature's story: built with two brains (p2), shipped and left on a friday (p3), two brains do both (p4), villagers in comic sans (p5), "you didn't patch me. you ghosted me." (p6), the doctor comes back and stays (p7), "(the screenshots are in helvetica now.)"; one creature head on every page
 
 ## 8. ship
 
