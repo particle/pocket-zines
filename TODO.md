@@ -55,6 +55,6 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 ## 8. ship
 
 - [x] render and check every changed sheet (fit, widows, default printing, look at every page)
-- [ ] review pdfs → publish canvases
-- [x] re-render the changed pdfs, rebuild `pocket-zines-all-ten.pdf`, and re-crop any changed covers
-- [ ] update index.html blurbs if taglines changed; check locally, push, confirm on the live site
+- [x] review pdfs → publish canvases
+- [x] re-render the changed pdfs, rebuild the all-in-one pdf (now `pocket-zines-all.pdf`, no count in the name), and re-crop any changed covers
+- [x] update index.html blurbs if taglines changed; check locally, push, confirm on the live site
