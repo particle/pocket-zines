@@ -93,7 +93,7 @@ who owns what. a motif belongs to one zine; nobody else uses it, in the text or 
 
 the field guides share their format (latin names, habitat, catch difficulty, the sightings checklist); that's the collection's, not a motif.
 
-settled clashes (TODO.md, section 2): the golem no longer says "very helpful" or "wasn't wicked"; frankenstein says "isn't evil" once (p6); the library's girl looks for her uncle's map to the best fishing spot instead of her grandmother's bread recipe (that change lands with the library rebuild in section 6).
+settled clashes (TODO.md, section 2): the golem no longer says "very helpful" or "wasn't wicked"; frankenstein says "isn't evil" once (p6); the library's girl looks for her uncle's map to the best fishing spot instead of her grandmother's bread recipe.
 
 ## the field-guide format
 

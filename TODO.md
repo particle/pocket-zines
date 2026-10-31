@@ -45,7 +45,7 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 
 - [x] little packet: keep the protagonist in the story past p6; pay off "see the world" and the TTL-at-zero setup directly, not just by implication → p7 "made it!": hands over "cats", TTL 49, "it had seen the world. (well, the internet.)", drawn covered in travel stickers. p8: the 4,096 cats come back and one cat packet runs out of hops
 - [x] golem: one golem on one journey instead of jumping between prague and today each page; p3 becomes an event, not narration; p7 becomes the rabbi's trick acted out, not a list → prague (p2–p3, the flood moves to p3 and the rabbi puts the golem to sleep in the attic), a developer looking for wifi wakes it (p4, "today we call them agents"), p7 she pulls the paper and writes a note that says when to stop
-- [ ] library: give the press (or the library) a goal; keep the girl in the story past p6; p7 becomes the librarians acting, not a list
+- [x] library: give the press (or the library) a goal; keep the girl in the story past p6; p7 becomes the librarians acting, not a list → the press wants nobody to leave without an answer (p3) and prints an answer to every question (p4); the girl looks for her uncle's fishing map (p6); p7 "the cellar": the librarians lead her to the original and give the press one rule. the stamp is dropped
 
 ## 7. rewrites (full process: 2–3 pitches → beat sheet → build)
 
