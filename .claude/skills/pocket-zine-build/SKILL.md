@@ -52,6 +52,7 @@ start only after the 8-page beat sheet is agreed with jerry (pocket-zine-story).
   | library | purple `#b48ce0` |
   | frankenstein | green `#8fcf6a` |
   | packet | blue `#5aa9e6` |
+  | from the very beginning | pink `#e88a9f` |
   | tuesday ghost | tan `#c98c5a` |
   | wild bugs | gold `#f2a93b` |
   | wild errors | coral `#e4572e` |
@@ -85,7 +86,7 @@ then **look at `pages.png` yourself**: clipped text, collisions, drawings that d
 1. send jerry the pdf (and `pages.png`) for review. iterate. **publish nothing until he says the review is done.**
 2. update the canvas artboard and `sources/`.
 3. `pdf` and `cover` into `pdfs/` and `covers/`.
-4. rebuild the all-in-one packet in `pdfs/` (every zine's pdf appended, in shelf order). rename the file and the "get all N" button text when the count changes.
-5. in `index.html`, add a card to the right shelf, copying its neighbors' markup: cover image, series line (`<collection> · no. N`), title, a one-sentence blurb that sets up the story without spoiling it, and a download button. a new collection gets a new shelf section. update the zine count in the lede and meta description, and add the source to the footer's "after …" credits.
+4. rebuild the all-in-one packet in `pdfs/` (every zine's pdf appended, in shelf order). it is always `pdfs/pocket-zines-all.pdf`. the site never states how many zines there are (no count in the lede, meta description or button), so a new zine never means renaming anything.
+5. in `index.html`, add a card to the right shelf, copying its neighbors' markup: cover image, series line (`<collection> · no. N`), title, a one-sentence blurb that sets up the story without spoiling it, and a download button. a new collection gets a new shelf section. add the source to the footer's "after …" credits.
 6. serve locally (`python3 -m http.server`) and check that every link and image returns 200 and there's no horizontal scroll at 390px wide.
 7. commit and push to `main`. GitHub Pages redeploys on its own. confirm on the live site.

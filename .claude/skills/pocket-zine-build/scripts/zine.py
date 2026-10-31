@@ -58,6 +58,10 @@ WIDOW_JS = r"""() => {
       if (el.closest('svg')) return;
       if ([...el.children].some(c => c.tagName === 'DIV' || c.tagName === 'P')) return;
       const groups = [[]];
+      // characters arrive in reading order; a new line starts when the vertical
+      // middle jumps by more than a few px, so a smaller inline font (e.g. a
+      // monospace file name) stays on the line it shares with the body text.
+      let line = 0, mid = null;
       const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT);
       while (w.nextNode()) {
         const n = w.currentNode;
@@ -66,7 +70,10 @@ WIDOW_JS = r"""() => {
           const r = document.createRange(); r.setStart(n, i); r.setEnd(n, i + 1);
           const b = r.getBoundingClientRect();
           if (!b.width && n.data[i] !== ' ') continue;
-          groups[groups.length - 1].push({ch: n.data[i], top: Math.round(b.top / 4)});
+          const m = (b.top + b.bottom) / 2;
+          if (b.width && mid !== null && Math.abs(m - mid) > 6) line++;
+          if (b.width) mid = m;
+          groups[groups.length - 1].push({ch: n.data[i], top: line});
         }
       }
       groups.forEach(g => {
