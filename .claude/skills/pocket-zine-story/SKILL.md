@@ -87,7 +87,7 @@ who owns what. a motif belongs to one zine; nobody else uses it, in the text or 
 | the little packet | the DNS owl, the routers, the shark and the undersea cable, the handshake, the TTL countdown |
 | from the very beginning | grandma (and grandpa), the birthday, the photo slideshow, the old dog and the puppy |
 | frankenstein ships it | the lab, lightning, pitchforks and torches, comic sans, "you ghosted it", "isn't evil" (once, on p6) |
-| the tuesday ghost | holmes, watson and lestrade, fog, tea, the ghost, keys that expire "like milk" |
+| the tuesday ghost | holmes, watson and lestrade, moriarty, fog, tea (and tacos), the ghost, the key register, keys that expire "like milk", payroll |
 | wild bugs | the moth in the logbook, the rubber duck |
 | wild errors | the teapot, the migrating bird, the hairy cryptid and its crossing sign |
 
