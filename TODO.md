@@ -39,7 +39,7 @@ from the 2026-10-30 critique of all ten zines. the order runs from cheapest and 
 - [x] library p5: "copy 10" reads as a fan; make it read as a hand with too many fingers → eleven uneven fingers side by side on a palm, one crooked, like copies 1 and 5
 - [x] mirror p6: the dragon is barely there; make it visible → a whole smug dragon (horn, wing, back spikes, smoke from its nose) sits beside the rubble
 - [x] wild bugs p6: the mandelbug reads as a spider with a target; draw bugs nested inside bugs → three whole bugs (head, eyes, antennae, legs), each inside the last one's body
-- [ ] wild errors: the cover's bigfoot never appears inside. make the 404 page the cryptid ("you've seen its sign…") instead of the empty nest
+- [x] wild errors: the cover's bigfoot never appears inside. make the 404 page the cryptid ("you've seen its sign…") instead of the empty nest → a snapshot of the woods marked "404?" with only a dashed outline of the cryptid, beside its crossing sign
 
 ## 6. structural fixes (beat sheet in chat first)
 

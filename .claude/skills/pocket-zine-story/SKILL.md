@@ -89,7 +89,7 @@ who owns what. a motif belongs to one zine; nobody else uses it, in the text or 
 | frankenstein ships it | the lab, lightning, pitchforks and torches, comic sans, "you ghosted it", "isn't evil" (once, on p6) |
 | the tuesday ghost | holmes, watson and lestrade, fog, tea, the ghost, keys that expire "like milk" |
 | wild bugs | the moth in the logbook, the rubber duck |
-| wild errors | the teapot, the migrating bird |
+| wild errors | the teapot, the migrating bird, the hairy cryptid and its crossing sign |
 
 the field guides share their format (latin names, habitat, catch difficulty, the sightings checklist); that's the collection's, not a motif.
 
