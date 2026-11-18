@@ -88,6 +88,6 @@ then **look at `pages.png` yourself**: clipped text, collisions, drawings that d
 3. `pdf` and `cover` into `pdfs/` and `covers/`.
 4. rebuild the all-in-one packet in `pdfs/` (every zine's pdf appended, in shelf order). it is always `pdfs/pocket-zines-all.pdf`. the site never states how many zines there are (no count in the lede, meta description or button), so a new zine never means renaming anything.
 5. in `index.html`, add a card to the right shelf, copying its neighbors' markup: cover image, series line (`<collection> · no. N`), title, a one-sentence blurb that sets up the story without spoiling it, and a download button. a new collection gets a new shelf section. add the source to the footer's "after …" credits.
-6. run `python3 scripts/build-backroom.py` to rebuild the unlisted reading room in `backroom/` (a phone-friendly web view of every zine on the site, built from `index.html` and `sources/`). never link to it from the public site.
+6. rebuild the unlisted reading room in `backroom/` (a phone-friendly web view of every zine on the site, built from `index.html` and `sources/`): every `zine.py` command does this on its own, so after editing `index.html` just run `zine.py backroom`. never link to it from the public site.
 7. serve locally (`python3 -m http.server`) and check that every link and image returns 200 and there's no horizontal scroll at 390px wide.
 8. commit and push to `main`. GitHub Pages redeploys on its own. confirm on the live site.

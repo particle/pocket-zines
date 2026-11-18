@@ -5,6 +5,10 @@ usage:
   python3 zine.py pdf    sheet.dc.html out.pdf    print pdf with the cut line visible
   python3 zine.py cover  sheet.dc.html out.png    2x cover image, 524x812, for the website
   python3 zine.py pages  sheet.dc.html out.png    all 8 pages upright in reading order, for looking at
+  python3 zine.py backroom                          just rebuild the reading room
+
+every command also rebuilds the unlisted reading room (backroom/) from index.html and
+sources/, so it never falls behind the site.
 
 needs: playwright (python) with chromium, pillow. fonts are bundled next to this script.
 """
@@ -105,7 +109,21 @@ def fold_hits(img):
     return s, hits
 
 
+def build_backroom(*hints):
+    """run scripts/build-backroom.py from the repo that holds this script or the sheet."""
+    import runpy
+    for start in [*hints, HERE, pathlib.Path.cwd()]:
+        for d in [pathlib.Path(start).resolve(), *pathlib.Path(start).resolve().parents]:
+            script = d / 'scripts' / 'build-backroom.py'
+            if script.exists():
+                runpy.run_path(str(script), run_name='__main__')
+                return
+    print('backroom: scripts/build-backroom.py not found, skipped')
+
+
 def main():
+    if sys.argv[1] == 'backroom':
+        return build_backroom()
     cmd, src = sys.argv[1], sys.argv[2]
     out = sys.argv[3] if len(sys.argv) > 3 else None
     with sync_playwright() as p:
@@ -149,3 +167,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    if sys.argv[1] != 'backroom':
+        build_backroom(sys.argv[2])
