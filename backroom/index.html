@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>pocket zines · the back room</title>
+<meta property="og:title" content="pocket zines · the back room">
+<meta property="og:description" content="read the pocket zines on your phone.">
+<meta property="og:image" content="https://particle.github.io/pocket-zines/covers/genie-in-the-light-switch.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap">
+<style>
+:root {
+  --bg: #f3f4f1; --ink: #1b1b1b; --muted: #565a55; --paper: #ffffff; --line: #1b1b1b; --focus: #2f6fb3;
+  --display: 'Gochi Hand', 'Comic Neue', cursive; --body: 'Patrick Hand', 'Trebuchet MS', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1e211f; --ink: #eceee9; --muted: #b3b8b1; --line: #eceee9; --focus: #8fbcf0; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+body { font-size: 19px; line-height: 1.4; padding: 32px max(16px, env(safe-area-inset-right)) 56px max(16px, env(safe-area-inset-left)); }
+.wrap { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; }
+header { display: flex; flex-direction: column; gap: 10px; max-width: 40rem; }
+h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(48px, 9vw, 80px); line-height: .95; }
+h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 36px; line-height: 1; }
+header p, .shelf-note { margin: 0; color: var(--muted); }
+.shelf { display: flex; flex-direction: column; gap: 18px; }
+.rack { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 24px; }
+.zine { display: flex; flex-direction: column; gap: 10px; min-width: 0; text-decoration: none; }
+.zine img { display: block; width: 100%; height: auto; aspect-ratio: 262 / 406; background: var(--paper); border: 1.5px solid var(--line); box-shadow: 5px 6px 0 rgba(0,0,0,.12); transition: transform .15s; }
+.zine:nth-child(odd) img { transform: rotate(-1.2deg); }
+.zine:nth-child(even) img { transform: rotate(1deg); }
+.zine:hover img { transform: rotate(0) translateY(-3px); }
+.series { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+.zine h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 26px; line-height: 1.05; text-wrap: balance; }
+.zine p.blurb { margin: 0; font-size: 17px; }
+footer { color: var(--muted); font-size: 16px; border-top: 2px dashed var(--muted); padding-top: 16px; }
+@media (max-width: 900px) { .rack { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .rack { gap: 26px 16px; } .zine h3 { font-size: 22px; } .zine p.blurb { display: none; } }
+@media (prefers-reduced-motion: reduce) { .zine img { transition: none; } }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>the back room</h1>
+    <p>every pocket zine, made for reading on a screen. tap a cover to start, then swipe or tap to turn the page.</p>
+  </header>
+
+  <section class="shelf">
+    <h2>once upon a model</h2>
+    <p class="shelf-note">old fables, retold for the age of ai.</p>
+    <div class="rack">
+      <a class="zine" href="genie-in-the-light-switch.html">
+        <img src="../covers/genie-in-the-light-switch.png" alt="cover of the genie in the light switch: a genie rising like smoke from a light switch" width="262" height="406" loading="lazy">
+        <p class="series">once upon a model · no. 1</p>
+        <h3>the genie in the light switch</h3>
+        <p class="blurb">a genie moves into the light switch and makes everything cozy. then the switches disappear, and nobody can guess what it will do next.</p>
+      </a>
+      <a class="zine" href="golem.html">
+        <img src="../covers/golem.png" alt="cover of the golem who did exactly what you said: a friendly clay golem holding a bucket" width="262" height="406" loading="lazy">
+        <p class="series">once upon a model · no. 2</p>
+        <h3>the golem</h3>
+        <p class="blurb">a clay helper from old prague wakes up four hundred years later and does exactly what it’s told. that’s the problem.</p>
+      </a>
+      <a class="zine" href="mirror.html">
+        <img src="../covers/mirror.png" alt="cover of the mirror who wanted to be liked: a grinning oval mirror giving a thumbs up" width="262" height="406" loading="lazy">
+        <p class="series">once upon a model · no. 3</p>
+        <h3>the mirror who wanted to be liked</h3>
+        <p class="blurb">the queen’s honest mirror learns that agreeing gets more thumbs up. then the dragon gets poked.</p>
+      </a>
+      <a class="zine" href="library.html">
+        <img src="../covers/library.png" alt="cover of the library that wrote itself: a bookshelf of books writing themselves" width="262" height="406" loading="lazy">
+        <p class="series">once upon a model · no. 4</p>
+        <h3>the library that wrote itself</h3>
+        <p class="blurb">a magic press fills the library overnight, then starts copying its own copies. the hands grow extra fingers.</p>
+      </a>
+    </div>
+  </section>
+  <section class="shelf">
+    <h2>true-ish tales of the internet</h2>
+    <p class="shelf-note">standards and protocols, told as a character's journey.</p>
+    <div class="rack">
+      <a class="zine" href="little-packet.html">
+        <img src="../covers/little-packet.png" alt="cover of the little packet who wanted to see the world: a smiling envelope carrying a bindle" width="262" height="406" loading="lazy">
+        <p class="series">true-ish tales of the internet · no. 1</p>
+        <h3>the little packet</h3>
+        <p class="blurb">someone types “cats” and presses enter. a tiny packet sets off past a wise old DNS owl, a lot of routers, and one curious shark.</p>
+      </a>
+      <a class="zine" href="from-the-very-beginning.html">
+        <img src="../covers/from-the-very-beginning.png" alt="cover of from the very beginning: a kid hugging a photo frame while old photos tumble out of a shoebox" width="262" height="406" loading="lazy">
+        <p class="series">true-ish tales of the internet · no. 2</p>
+        <h3>from the very beginning</h3>
+        <p class="blurb">a kid makes a surprise slideshow for grandma's 80th, and the photo frame sorts her life digit by digit. grandma gets married before she's born.</p>
+      </a>
+    </div>
+  </section>
+  <section class="shelf">
+    <h2>tales of software gone sideways</h2>
+    <p class="shelf-note">classic tales, retold as engineering cautionary tales.</p>
+    <div class="rack">
+      <a class="zine" href="frankenstein-ships-it.html">
+        <img src="../covers/frankenstein-ships-it.png" alt="cover of frankenstein ships it: a stitched-together creature beside a lightning bolt" width="262" height="406" loading="lazy">
+        <p class="series">tales of software gone sideways · no. 1</p>
+        <h3>frankenstein ships it</h3>
+        <p class="blurb">a creature stitched together from spare code wakes up on a friday, just in time to watch its maker ship it and go home.</p>
+      </a>
+      <a class="zine" href="tuesday-ghost.html">
+        <img src="../covers/tuesday-ghost.png" alt="cover of the case of the tuesday ghost: holmes in a deerstalker with a magnifying glass, and a little ghost holding a key" width="262" height="406" loading="lazy">
+        <p class="series">tales of software gone sideways · no. 2</p>
+        <h3>the case of the tuesday ghost</h3>
+        <p class="blurb">the build fails only on tuesdays, and the log file is empty. holmes follows the evidence to a culprit nobody remembered.</p>
+      </a>
+    </div>
+  </section>
+  <section class="shelf">
+    <h2>field guides to the digital wild</h2>
+    <p class="shelf-note">a naturalist's field guide to the creatures of software.</p>
+    <div class="rack">
+      <a class="zine" href="wild-bugs.html">
+        <img src="../covers/wild-bugs.png" alt="cover of a pocket field guide to wild bugs: a magnifying glass over a beetle" width="262" height="406" loading="lazy">
+        <p class="series">field guides to the digital wild · no. 1</p>
+        <h3>wild bugs</h3>
+        <p class="blurb">a naturalist's guide to the heisenbug, the bohrbug, the schrödinbug and the mandelbug. with a sightings checklist.</p>
+      </a>
+      <a class="zine" href="wild-errors.html">
+        <img src="../covers/wild-errors.png" alt="cover of a pocket field guide to wild errors: a diamond crossing sign with a striding cryptid and a 404 plate" width="262" height="406" loading="lazy">
+        <p class="series">field guides to the digital wild · no. 2</p>
+        <h3>wild errors</h3>
+        <p class="blurb">a naturalist's guide to the 301, the 404, the 403 and the 503, plus the rarest one of all: the protected 418 teapot.</p>
+      </a>
+    </div>
+  </section>
+  <footer>words and doodles by jerry gay · the paper versions are <a href="../">out front</a></footer>
+</div>
+</body>
+</html>

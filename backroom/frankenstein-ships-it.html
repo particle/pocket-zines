@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>frankenstein ships it · pocket zines</title>
+<meta property="og:title" content="frankenstein ships it · pocket zines">
+<meta property="og:description" content="a creature stitched together from spare code wakes up on a friday, just in time to watch its maker ship it and go home.">
+<meta property="og:image" content="https://particle.github.io/pocket-zines/covers/frankenstein-ships-it.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap">
+<style>
+:root {
+  --bg: #f3f4f1; --ink: #1b1b1b; --muted: #565a55; --paper: #ffffff; --line: #1b1b1b; --focus: #2f6fb3;
+  --display: 'Gochi Hand', 'Comic Neue', cursive; --body: 'Patrick Hand', 'Trebuchet MS', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1e211f; --ink: #eceee9; --muted: #b3b8b1; --line: #eceee9; --focus: #8fbcf0; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+html, body { height: 100%; overflow: hidden; overscroll-behavior: none; }
+body { display: flex; flex-direction: column; height: 100dvh; }
+.bar { flex: none; display: flex; align-items: center; gap: 12px; padding: max(10px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 8px max(14px, env(safe-area-inset-left)); font-size: 17px; }
+.bar a { text-decoration: none; white-space: nowrap; }
+.bar .title { flex: 1; min-width: 0; text-align: center; font-family: var(--display); font-size: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar .pdf { color: var(--muted); }
+.track { flex: 1; min-height: 0; display: flex; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-tap-highlight-color: transparent; }
+.track::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 100%; scroll-snap-align: center; scroll-snap-stop: always; display: flex; align-items: center; justify-content: center; padding: 8px 16px; }
+.paper { background: #fff; color: #1b1b1b; box-shadow: 0 1px 0 rgba(0,0,0,.08), 4px 5px 0 rgba(0,0,0,.12); border-radius: 2px; }
+.paper > div { zoom: var(--z, 1); }
+.end { width: calc(264px * var(--z, 1)); max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.end h2 { margin: 0 0 6px; font-family: var(--display); font-weight: 400; font-size: 44px; line-height: 1; }
+.end a { display: block; width: 100%; padding: 12px 16px; border: 2.5px solid var(--line); border-radius: 10px 14px 9px 13px; text-decoration: none; font-size: 18px; box-shadow: 3px 3px 0 var(--line); background: var(--bg); }
+.end a small { display: block; color: var(--muted); font-size: 14px; }
+.nav { flex: none; display: flex; align-items: center; justify-content: center; gap: 18px; padding: 6px 16px max(12px, env(safe-area-inset-bottom)); font-size: 17px; color: var(--muted); }
+.nav button { font: inherit; font-size: 26px; line-height: 1; width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; }
+.nav button:disabled { opacity: .25; cursor: default; }
+.count { min-width: 5.5em; text-align: center; }
+@media (prefers-reduced-motion: reduce) { .track { scroll-behavior: auto; } }
+
+.nav .count b { color: #8fcf6a; }
+</style>
+</head>
+<body>
+<svg aria-hidden="true" width="0" height="0" style="position: absolute; left: 0; top: 0"><defs><filter id="ink" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="wob"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="wob" scale="5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></defs></svg>
+<div class="bar">
+  <a href="./" aria-label="back to the shelf">← shelf</a>
+  <span class="title">frankenstein ships it</span>
+  <a class="pdf" href="../pdfs/frankenstein-ships-it.pdf" download>pdf</a>
+</div>
+<main class="track" id="track" aria-label="frankenstein ships it" tabindex="-1">
+  <section class="slide" role="group" aria-roledescription="page" aria-label="cover"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 28px 30px 30px 24px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; text-align: center">
+<h1 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 36px; line-height: 1; font-weight: 400">FRANKENSTEIN<br>SHIPS IT</h1>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="140" viewBox="0 0 224 140" role="img" aria-label="a square-headed creature with neck bolts and a stitched forehead, beside a lightning bolt" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M36 6 l-18 40 h16 l-12 34 l34 -46 h-16 l14 -28 Z" fill="#8fcf6a" fill-opacity="0.7"></path>
+<rect x="76" y="30" width="84" height="90" rx="8" fill="#8fcf6a" fill-opacity="0.3"></rect>
+<path d="M76 46 V30 h84 v16 l-12 -6 l-12 6 l-12 -6 l-12 6 l-12 -6 l-12 6 Z" fill="#1b1b1b"></path>
+<rect x="62" y="94" width="14" height="10" fill="#ffffff"></rect>
+<rect x="160" y="94" width="14" height="10" fill="#ffffff"></rect>
+<path d="M90 58 h26 M94 54 v8 M102 54 v8 M110 54 v8" stroke-width="1.8"></path>
+<circle cx="102" cy="76" r="3" fill="#1b1b1b"></circle>
+<circle cx="134" cy="76" r="3" fill="#1b1b1b"></circle>
+<path d="M100 102 h36"></path>
+<path d="M104 102 v4 M114 102 v4 M124 102 v4 M132 102 v4" stroke-width="1.5"></path>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.2">a cautionary tale, stitched together from spare parts</p>
+<p style="margin: auto 0 0; font-size: 13px; color: #555">tales of software gone sideways · no. 1</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 2 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 30px; display: flex; flex-direction: column; gap: 9px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">a dark &amp; stormy sprint</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">late one night, in a candlelit lab, dr. frankenstein stitched a creature together from whatever was lying around: a vendor module, a dependency that might be cursed, code from 2016 that nobody maintained.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="92" viewBox="0 0 224 92" role="img" aria-label="dr. frankenstein at his bench by candlelight, with a box marked vendor, a box marked 2016, and two brains in jars" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M2 84 h220" stroke-width="2.4"></path>
+<path d="M14 84 v-26 M8 84 h12" stroke-width="2.4"></path><rect x="9" y="58" width="10" height="20" fill="#ffffff" stroke-width="2"></rect><path d="M14 58 q-5 -8 0 -14 q5 6 0 14 Z" fill="#8fcf6a" fill-opacity="0.7" stroke-width="1.6"></path>
+<g transform="translate(50 20) scale(1.0)">
+<path d="M-10 20 h20 l6 36 h-32 Z" fill="#ffffff" stroke-width="2.6"></path>
+<path d="M0 20 v22" stroke-width="1.4"></path>
+<path d="M-6 56 v8 M6 56 v8" stroke-width="2.6"></path>
+<circle cx="0" cy="10" r="9" fill="#ffffff" stroke-width="2.6"></circle>
+<path d="M-9 6 l-5 -4 l4 -1 l-3 -6 l6 3 l1 -6 l4 5 l3 -6 l2 6 l5 -4 l-1 6 l5 -1 l-4 5 l5 2" stroke-width="2" fill="#1b1b1b" fill-opacity="0.15"></path>
+<circle cx="-3.5" cy="10" r="3" stroke-width="1.5"></circle><circle cx="3.5" cy="10" r="3" stroke-width="1.5"></circle><path d="M-0.5 10 h1" stroke-width="1.2"></path><path d="M-2 15 h4" stroke-width="1.4"></path>
+
+</g>
+<rect x="80" y="62" width="34" height="22" rx="2" fill="#ffffff" stroke-width="2.2"></rect><text x="97" y="77" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="10" fill="#1b1b1b" stroke="none">vendor</text>
+<rect x="120" y="66" width="28" height="18" rx="2" fill="#ffffff" stroke-width="2.2"></rect><text x="134" y="79" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="10" fill="#1b1b1b" stroke="none">2016</text>
+<rect x="158" y="50" width="26" height="34" rx="5" fill="#ffffff" stroke-width="2.2"></rect><path d="M163 66 q3 -8 8 -4 q5 -6 9 2 q3 6 -4 8 q-6 4 -10 0 q-5 0 -3 -6 Z" fill="#8fcf6a" fill-opacity="0.6" stroke-width="1.5"></path>
+<rect x="190" y="50" width="26" height="34" rx="5" fill="#ffffff" stroke-width="2.2"></rect><path d="M195 66 q3 -8 8 -4 q5 -6 9 2 q3 6 -4 8 q-6 4 -10 0 q-5 0 -3 -6 Z" fill="#8fcf6a" fill-opacity="0.6" stroke-width="1.5"></path>
+</g></svg>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 20px; line-height: 1.1">“what if,” he said, “i give it two brains?”</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 2 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 3 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 9px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">IT'S ALIVE!</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">lightning struck. the creature booted up, opened its eyes and saw its maker. it wanted one thing: for him to stay.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="100" viewBox="0 0 224 100" role="img" aria-label="lightning strikes as the creature sits up on the lab table, eyes wide, while the doctor strides out the door with an open laptop under his arm" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<g transform="translate(8 2) scale(0.75)">
+<path d="M18 0 l-18 40 h16 l-12 34 l34 -46 h-16 l14 -28 Z" fill="#8fcf6a" fill-opacity="0.7"></path>
+</g>
+<path d="M30 92 h90 M40 92 v8 M110 92 v8" stroke-width="2.6"></path>
+<g transform="translate(56 18) scale(0.42)">
+
+<path d="M6 100 q-22 6 -28 30" stroke-width="3.4"></path><rect x="-30" y="128" width="12" height="9" rx="2" fill="#ffffff" stroke-width="2.2"></rect><path d="M-27 137 v5 M-21 137 v5" stroke-width="2"></path>
+<path d="M78 100 q22 6 28 30" stroke-width="3.4"></path><rect x="100" y="128" width="12" height="9" rx="2" fill="#ffffff" stroke-width="2.2"></rect><path d="M103 137 v5 M109 137 v5" stroke-width="2"></path>
+<path d="M28 146 q-4 16 -2 30 h-10 M56 146 q4 16 2 30 h10" stroke-width="3.4"></path>
+<rect x="4" y="90" width="40" height="30" fill="#ffffff" stroke-width="2.6"></rect><rect x="44" y="90" width="36" height="30" fill="#ffffff" stroke-width="2.6"></rect><rect x="12" y="120" width="60" height="28" fill="#ffffff" stroke-width="2.6"></rect>
+<rect x="4" y="90" width="76" height="30" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect><rect x="12" y="120" width="60" height="28" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect>
+<text x="24" y="112" text-anchor="middle" font-family="Courier New, monospace" font-size="18" font-weight="bold" fill="#1b1b1b" stroke="none">{ }</text>
+<text x="62" y="110" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="15" fill="#1b1b1b" stroke="none">2016</text>
+<circle cx="42" cy="132" r="7" fill="#ffffff" stroke-width="2"></circle><path d="M38 141 h8" stroke-width="2"></path><circle cx="39.5" cy="131" r="1.6" fill="#1b1b1b" stroke="none"></circle><circle cx="44.5" cy="131" r="1.6" fill="#1b1b1b" stroke="none"></circle>
+<path d="M40 112 h8 M40 104 h8 M40 96 h8 M22 116 v8 M34 116 v8 M54 116 v8 M66 116 v8" stroke-width="1.6"></path>
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#ffffff"></rect>
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect>
+<path d="M0 16 V0 h84 v16 l-12 -6 l-12 6 l-12 -6 l-12 6 l-12 -6 l-12 6 Z" fill="#1b1b1b"></path>
+<rect x="-14" y="64" width="14" height="10" fill="#ffffff"></rect><rect x="84" y="64" width="14" height="10" fill="#ffffff"></rect>
+<path d="M14 28 h26 M18 24 v8 M26 24 v8 M34 24 v8" stroke-width="1.8"></path>
+<circle cx="26" cy="46" r="7" fill="#ffffff" stroke-width="2.4"></circle><circle cx="58" cy="46" r="7" fill="#ffffff" stroke-width="2.4"></circle><circle cx="26" cy="46" r="3" fill="#1b1b1b"></circle><circle cx="58" cy="46" r="3" fill="#1b1b1b"></circle>
+<ellipse cx="42" cy="74" rx="6" ry="7" fill="#ffffff"></ellipse>
+</g>
+<path d="M44 26 l-6 -4 M96 24 l6 -5 M100 40 l8 -1" stroke-width="1.8"></path>
+<path d="M150 98 V12 h56 v86" stroke-width="2.4"></path>
+<g transform="translate(180 28) scale(0.95)">
+<path d="M-8 20 h14 l14 30 l-8 4 l-6 -10 v10 h-18 Z" fill="#ffffff" stroke-width="2.6"></path>
+<path d="M-2 54 l-8 12 M4 54 l10 11" stroke-width="2.6"></path>
+<circle cx="0" cy="10" r="9" fill="#ffffff" stroke-width="2.6"></circle>
+<path d="M-8 4 l-8 -2 l6 -2 l-8 -5 l9 1 l-3 -6 l7 4 l2 -5 l3 6" stroke-width="2" fill="#1b1b1b" fill-opacity="0.15"></path>
+<circle cx="5" cy="9" r="3" stroke-width="1.5"></circle><path d="M9 11 l3 2 l-3 1" stroke-width="1.4"></path><path d="M2 16 h4" stroke-width="1.4"></path>
+<path d="M0 24 l4 12" stroke-width="2.4"></path>
+<g transform="rotate(-20 0 38)"><rect x="-12" y="32" width="20" height="13" rx="1.5" fill="#8fcf6a" fill-opacity="0.3" stroke-width="2"></rect><path d="M-12 45 l-6 4 h20 l6 -4" fill="#ffffff" stroke-width="2"></path></g>
+</g>
+</g></svg>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 20px; line-height: 1.1">he shipped it on a friday and went home.</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 3 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 4 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 9px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">two brains</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">on monday, the creature tried its best. but its two brains disagreed about everything. one said yes. one said no. so it did both.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="92" viewBox="0 0 224 92" role="img" aria-label="the creature, worried, with two thought bubbles, one saying yes and one saying no, and two copies of the same email flying off" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<g transform="translate(70 34) scale(0.6)">
+
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#ffffff"></rect>
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect>
+<path d="M0 16 V0 h84 v16 l-12 -6 l-12 6 l-12 -6 l-12 6 l-12 -6 l-12 6 Z" fill="#1b1b1b"></path>
+<rect x="-14" y="64" width="14" height="10" fill="#ffffff"></rect><rect x="84" y="64" width="14" height="10" fill="#ffffff"></rect>
+<path d="M14 28 h26 M18 24 v8 M26 24 v8 M34 24 v8" stroke-width="1.8"></path>
+<circle cx="26" cy="46" r="3.4" fill="#1b1b1b"></circle><circle cx="58" cy="46" r="3.4" fill="#1b1b1b"></circle>
+<path d="M24 74 q6 -6 12 0 t12 0 t12 0"></path>
+</g>
+<rect x="24" y="4" width="46" height="22" rx="10" fill="#ffffff" stroke-width="2.2"></rect><text x="47" y="20" text-anchor="middle" font-family="Gochi Hand, cursive" font-size="15" fill="#1b1b1b" stroke="none">yes!</text><circle cx="66" cy="32" r="3" stroke-width="1.8"></circle>
+<rect x="104" y="2" width="46" height="22" rx="10" fill="#ffffff" stroke-width="2.2"></rect><text x="127" y="18" text-anchor="middle" font-family="Gochi Hand, cursive" font-size="15" fill="#1b1b1b" stroke="none">no!</text><circle cx="110" cy="30" r="3" stroke-width="1.8"></circle>
+<g transform="rotate(-12 179 49)"><rect x="168" y="42" width="22" height="14" fill="#ffffff" stroke-width="1.8"></rect><path d="M168 42 l11 7 l11 -7" stroke-width="1.4"></path></g>
+<g transform="rotate(10 195 73)"><rect x="184" y="66" width="22" height="14" fill="#ffffff" stroke-width="1.8"></rect><path d="M184 66 l11 7 l11 -7" stroke-width="1.4"></path></g>
+<path d="M146 60 h14 M150 74 h20" stroke-width="1.6" stroke-dasharray="3 4"></path>
+</g></svg>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 20px; line-height: 1.1">(it sent every email twice.)</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 4 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 5 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 30px 30px 24px; display: flex; flex-direction: column; gap: 9px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the villagers</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">the villagers (sorry, users) showed up with pitchforks. and torches. and screenshots. in comic sans.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="76" viewBox="0 0 224 108" role="img" aria-label="an angry crowd of pitchforks, a torch, and a phone held up high" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M30 106 V34 M20 34 h20 M20 34 v-16 M30 34 v-18 M40 34 v-16"></path>
+<path d="M70 106 V24 M60 24 h20 M60 24 v-16 M70 24 v-18 M80 24 v-16"></path>
+<path d="M112 106 l6 -64"></path>
+<path d="M118 42 q-14 -14 -2 -32 q4 12 10 8 q6 14 -8 24 Z" fill="#8fcf6a" fill-opacity="0.6"></path>
+<path d="M150 106 V30 M140 30 h20 M140 30 v-16 M150 30 v-18 M160 30 v-16"></path>
+<rect x="178" y="20" width="32" height="54" rx="5" fill="#ffffff"></rect>
+<text x="194" y="52" text-anchor="middle" font-family="Gochi Hand, cursive" font-size="22" fill="#1b1b1b" stroke="none">!!</text>
+<path d="M194 74 v32"></path>
+</g></svg>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">the creature didn't know what it had done wrong. it had no logs to tell it.</p>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 20px; line-height: 1.1">it wasn't mean. it was broken, and alone.</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 5 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 6 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 30px; display: flex; flex-direction: column; gap: 9px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the real mistake</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">the creature went looking for its maker. it found him starting something new and shiny.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="96" viewBox="0 0 224 96" role="img" aria-label="the creature, with a tear, facing the doctor at a gleaming new machine" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<g transform="translate(26 4) scale(0.5)">
+
+<path d="M6 100 q-22 6 -28 30" stroke-width="3.4"></path><rect x="-30" y="128" width="12" height="9" rx="2" fill="#ffffff" stroke-width="2.2"></rect><path d="M-27 137 v5 M-21 137 v5" stroke-width="2"></path>
+<path d="M78 100 q22 6 28 30" stroke-width="3.4"></path><rect x="100" y="128" width="12" height="9" rx="2" fill="#ffffff" stroke-width="2.2"></rect><path d="M103 137 v5 M109 137 v5" stroke-width="2"></path>
+<path d="M28 146 q-4 16 -2 30 h-10 M56 146 q4 16 2 30 h10" stroke-width="3.4"></path>
+<rect x="4" y="90" width="40" height="30" fill="#ffffff" stroke-width="2.6"></rect><rect x="44" y="90" width="36" height="30" fill="#ffffff" stroke-width="2.6"></rect><rect x="12" y="120" width="60" height="28" fill="#ffffff" stroke-width="2.6"></rect>
+<rect x="4" y="90" width="76" height="30" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect><rect x="12" y="120" width="60" height="28" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect>
+<text x="24" y="112" text-anchor="middle" font-family="Courier New, monospace" font-size="18" font-weight="bold" fill="#1b1b1b" stroke="none">{ }</text>
+<text x="62" y="110" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="15" fill="#1b1b1b" stroke="none">2016</text>
+<circle cx="42" cy="132" r="7" fill="#ffffff" stroke-width="2"></circle><path d="M38 141 h8" stroke-width="2"></path><circle cx="39.5" cy="131" r="1.6" fill="#1b1b1b" stroke="none"></circle><circle cx="44.5" cy="131" r="1.6" fill="#1b1b1b" stroke="none"></circle>
+<path d="M40 112 h8 M40 104 h8 M40 96 h8 M22 116 v8 M34 116 v8 M54 116 v8 M66 116 v8" stroke-width="1.6"></path>
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#ffffff"></rect>
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect>
+<path d="M0 16 V0 h84 v16 l-12 -6 l-12 6 l-12 -6 l-12 6 l-12 -6 l-12 6 Z" fill="#1b1b1b"></path>
+<rect x="-14" y="64" width="14" height="10" fill="#ffffff"></rect><rect x="84" y="64" width="14" height="10" fill="#ffffff"></rect>
+<path d="M14 28 h26 M18 24 v8 M26 24 v8 M34 24 v8" stroke-width="1.8"></path>
+<circle cx="26" cy="46" r="3.4" fill="#1b1b1b"></circle><circle cx="58" cy="46" r="3.4" fill="#1b1b1b"></circle>
+<path d="M26 78 q16 -12 32 0"></path><path d="M24 54 q-4 8 0 12 q4 -4 0 -12 Z" fill="#5aa9e6" stroke="#5aa9e6" stroke-width="1.5"></path>
+</g>
+<g transform="translate(140 24) scale(1.0)">
+<path d="M-10 20 h20 l6 36 h-32 Z" fill="#ffffff" stroke-width="2.6"></path>
+<path d="M0 20 v22" stroke-width="1.4"></path>
+<path d="M-6 56 v8 M6 56 v8" stroke-width="2.6"></path>
+<circle cx="0" cy="10" r="9" fill="#ffffff" stroke-width="2.6"></circle>
+<path d="M-9 6 l-5 -4 l4 -1 l-3 -6 l6 3 l1 -6 l4 5 l3 -6 l2 6 l5 -4 l-1 6 l5 -1 l-4 5 l5 2" stroke-width="2" fill="#1b1b1b" fill-opacity="0.15"></path>
+<circle cx="-3.5" cy="10" r="3" stroke-width="1.5"></circle><circle cx="3.5" cy="10" r="3" stroke-width="1.5"></circle><path d="M-0.5 10 h1" stroke-width="1.2"></path><path d="M-2 15 h4" stroke-width="1.4"></path>
+
+</g>
+<rect x="160" y="40" width="54" height="44" rx="6" fill="#ffffff" stroke-width="2.4"></rect><rect x="160" y="40" width="54" height="44" rx="6" fill="#5aa9e6" fill-opacity="0.3" stroke="none"></rect>
+<path d="M170 52 l10 12 M184 50 l10 12" stroke="#ffffff" stroke-width="3"></path>
+<path d="M206 22 v10 M201 27 h10 M168 26 v8 M164 30 h8 M218 52 v6 M215 55 h6" stroke-width="1.8"></path>
+<path d="M2 92 h220" stroke-width="2.2"></path>
+</g></svg>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 20px; line-height: 1.1">“you didn't patch me,” said the creature. “you ghosted me.”</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 6 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 7 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 9px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">take two</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">the doctor came back. this time, he stayed.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="96" viewBox="0 0 224 96" role="img" aria-label="the doctor and the smiling creature side by side at a laptop; the doctor wears a tag that says on-call: me" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<g transform="translate(44 22) scale(1.0)">
+<path d="M-10 20 h20 l6 36 h-32 Z" fill="#ffffff" stroke-width="2.6"></path>
+<path d="M0 20 v22" stroke-width="1.4"></path>
+<path d="M-6 56 v8 M6 56 v8" stroke-width="2.6"></path>
+<circle cx="0" cy="10" r="9" fill="#ffffff" stroke-width="2.6"></circle>
+<path d="M-9 6 l-5 -4 l4 -1 l-3 -6 l6 3 l1 -6 l4 5 l3 -6 l2 6 l5 -4 l-1 6 l5 -1 l-4 5 l5 2" stroke-width="2" fill="#1b1b1b" fill-opacity="0.15"></path>
+<circle cx="-3.5" cy="10" r="3" stroke-width="1.5"></circle><circle cx="3.5" cy="10" r="3" stroke-width="1.5"></circle><path d="M-0.5 10 h1" stroke-width="1.2"></path><path d="M-2 15 h4" stroke-width="1.4"></path>
+<path d="M-4 20 l4 12 l4 -12" stroke-width="1.4"></path><rect x="-28" y="32" width="56" height="15" rx="3" fill="#ffffff" stroke-width="2"></rect><rect x="-28" y="32" width="56" height="15" rx="3" fill="#8fcf6a" fill-opacity="0.4" stroke="none"></rect><text x="0" y="43.5" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="11" fill="#1b1b1b" stroke="none">on-call: me</text>
+</g>
+<rect x="82" y="58" width="44" height="28" rx="2" fill="#8fcf6a" fill-opacity="0.25" stroke-width="2.4"></rect><path d="M76 92 l8 -6 h40 l8 6 Z" fill="#ffffff" stroke-width="2.4"></path>
+<path d="M88 66 h22 M88 73 h16 M88 80 h26" stroke-width="1.3"></path>
+<g transform="translate(160 4) scale(0.5)">
+
+<path d="M6 100 q-22 6 -28 30" stroke-width="3.4"></path><rect x="-30" y="128" width="12" height="9" rx="2" fill="#ffffff" stroke-width="2.2"></rect><path d="M-27 137 v5 M-21 137 v5" stroke-width="2"></path>
+<path d="M78 100 q22 6 28 30" stroke-width="3.4"></path><rect x="100" y="128" width="12" height="9" rx="2" fill="#ffffff" stroke-width="2.2"></rect><path d="M103 137 v5 M109 137 v5" stroke-width="2"></path>
+<path d="M28 146 q-4 16 -2 30 h-10 M56 146 q4 16 2 30 h10" stroke-width="3.4"></path>
+<rect x="4" y="90" width="40" height="30" fill="#ffffff" stroke-width="2.6"></rect><rect x="44" y="90" width="36" height="30" fill="#ffffff" stroke-width="2.6"></rect><rect x="12" y="120" width="60" height="28" fill="#ffffff" stroke-width="2.6"></rect>
+<rect x="4" y="90" width="76" height="30" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect><rect x="12" y="120" width="60" height="28" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect>
+<text x="24" y="112" text-anchor="middle" font-family="Courier New, monospace" font-size="18" font-weight="bold" fill="#1b1b1b" stroke="none">{ }</text>
+<text x="62" y="110" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="15" fill="#1b1b1b" stroke="none">2016</text>
+<circle cx="42" cy="132" r="7" fill="#ffffff" stroke-width="2"></circle><path d="M38 141 h8" stroke-width="2"></path><circle cx="39.5" cy="131" r="1.6" fill="#1b1b1b" stroke="none"></circle><circle cx="44.5" cy="131" r="1.6" fill="#1b1b1b" stroke="none"></circle>
+<path d="M40 112 h8 M40 104 h8 M40 96 h8 M22 116 v8 M34 116 v8 M54 116 v8 M66 116 v8" stroke-width="1.6"></path>
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#ffffff"></rect>
+<rect x="0" y="0" width="84" height="90" rx="8" fill="#8fcf6a" fill-opacity="0.3" stroke="none"></rect>
+<path d="M0 16 V0 h84 v16 l-12 -6 l-12 6 l-12 -6 l-12 6 l-12 -6 l-12 6 Z" fill="#1b1b1b"></path>
+<rect x="-14" y="64" width="14" height="10" fill="#ffffff"></rect><rect x="84" y="64" width="14" height="10" fill="#ffffff"></rect>
+<path d="M14 28 h26 M18 24 v8 M26 24 v8 M34 24 v8" stroke-width="1.8"></path>
+<circle cx="26" cy="46" r="3.4" fill="#1b1b1b"></circle><circle cx="58" cy="46" r="3.4" fill="#1b1b1b"></circle>
+<path d="M24 66 q18 16 36 0"></path>
+</g>
+</g></svg>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">he gave the creature logs, so it could say where it hurt, and wrote his own name on the on-call list.</p>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 20px; line-height: 1.1">for once, both brains agreed.</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 7 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 8 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 10px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the moral</h2>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 22px; line-height: 1.15">don't just ship something alive. ship something you'll care for.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">build things you'd be proud to own at 3 a.m., when the phone rings.</p>
+<div style="border: 2px solid #1b1b1b; border-radius: 6px; padding: 8px 12px; background: #8fcf6a33; font-size: 15px; line-height: 1.22">you don't have to be perfect. you just have to stick around.</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.22">(the screenshots are in helvetica now.)</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">after Mary Shelley, 1818 · by jerry gay</p>
+</div></div></section>
+  <section class="slide" role="group" aria-label="the end"><div class="end">
+    <h2>the end.</h2>
+    <a href="tuesday-ghost.html">next zine<small>the case of the tuesday ghost</small></a>
+    <a href="./">back to the shelf<small>all the zines</small></a>
+    <a href="../pdfs/frankenstein-ships-it.pdf" download>print your own<small>one sheet, one cut, a few folds</small></a>
+  </div></section>
+</main>
+<nav class="nav" aria-label="pages">
+  <button id="prev" aria-label="previous page">‹</button>
+  <span class="count" id="count" aria-live="polite">cover</span>
+  <button id="next" aria-label="next page">›</button>
+</nav>
+<script>
+(() => {
+  const track = document.getElementById('track');
+  const slides = [...track.children], last = slides.length - 1;
+  const label = i => i === 0 ? 'cover' : i === last ? 'the end' : (i + 1) + ' / 8';
+  const prev = document.getElementById('prev'), next = document.getElementById('next'), count = document.getElementById('count');
+  let cur = 0;
+  function fit() {
+    const w = track.clientWidth - 32, h = track.clientHeight - 16;
+    document.documentElement.style.setProperty('--z', Math.min(w / 264, h / 408, 2.4).toFixed(4));
+  }
+  function show(i) {
+    cur = i;
+    count.textContent = label(i);
+    prev.disabled = i === 0; next.disabled = i === last;
+    history.replaceState(null, '', i ? '#p' + (i + 1) : location.pathname);
+  }
+  function go(i, smooth = true) {
+    i = Math.max(0, Math.min(last, i));
+    track.scrollTo({ left: i * track.clientWidth, behavior: smooth ? 'smooth' : 'instant' });
+    show(i);
+  }
+  let t;
+  track.addEventListener('scroll', () => {
+    clearTimeout(t);
+    t = setTimeout(() => { const i = Math.round(track.scrollLeft / track.clientWidth); if (i !== cur) show(i); }, 60);
+  }, { passive: true });
+  track.addEventListener('click', e => {
+    if (e.target.closest('a') || getSelection().toString()) return;
+    go(cur + (e.clientX < innerWidth / 3 ? -1 : 1));
+  });
+  prev.onclick = () => go(cur - 1);
+  next.onclick = () => go(cur + 1);
+  addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(cur + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(cur - 1); }
+    else if (e.key === 'Home') go(0); else if (e.key === 'End') go(last);
+  });
+  addEventListener('resize', () => { fit(); go(cur, false); });
+  fit();
+  const m = location.hash.match(/^#p(\d+)$/);
+  go(m ? +m[1] - 1 : 0, false);
+})();
+</script>
+</body>
+</html>

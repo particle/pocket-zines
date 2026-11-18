@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>wild errors · pocket zines</title>
+<meta property="og:title" content="wild errors · pocket zines">
+<meta property="og:description" content="a naturalist&#x27;s guide to the 301, the 404, the 403 and the 503, plus the rarest one of all: the protected 418 teapot.">
+<meta property="og:image" content="https://particle.github.io/pocket-zines/covers/wild-errors.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Patrick+Hand&display=swap">
+<style>
+:root {
+  --bg: #f3f4f1; --ink: #1b1b1b; --muted: #565a55; --paper: #ffffff; --line: #1b1b1b; --focus: #2f6fb3;
+  --display: 'Gochi Hand', 'Comic Neue', cursive; --body: 'Patrick Hand', 'Trebuchet MS', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1e211f; --ink: #eceee9; --muted: #b3b8b1; --line: #eceee9; --focus: #8fbcf0; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+html, body { height: 100%; overflow: hidden; overscroll-behavior: none; }
+body { display: flex; flex-direction: column; height: 100dvh; }
+.bar { flex: none; display: flex; align-items: center; gap: 12px; padding: max(10px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) 8px max(14px, env(safe-area-inset-left)); font-size: 17px; }
+.bar a { text-decoration: none; white-space: nowrap; }
+.bar .title { flex: 1; min-width: 0; text-align: center; font-family: var(--display); font-size: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar .pdf { color: var(--muted); }
+.track { flex: 1; min-height: 0; display: flex; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-tap-highlight-color: transparent; }
+.track::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 100%; scroll-snap-align: center; scroll-snap-stop: always; display: flex; align-items: center; justify-content: center; padding: 8px 16px; }
+.paper { background: #fff; color: #1b1b1b; box-shadow: 0 1px 0 rgba(0,0,0,.08), 4px 5px 0 rgba(0,0,0,.12); border-radius: 2px; }
+.paper > div { zoom: var(--z, 1); }
+.end { width: calc(264px * var(--z, 1)); max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.end h2 { margin: 0 0 6px; font-family: var(--display); font-weight: 400; font-size: 44px; line-height: 1; }
+.end a { display: block; width: 100%; padding: 12px 16px; border: 2.5px solid var(--line); border-radius: 10px 14px 9px 13px; text-decoration: none; font-size: 18px; box-shadow: 3px 3px 0 var(--line); background: var(--bg); }
+.end a small { display: block; color: var(--muted); font-size: 14px; }
+.nav { flex: none; display: flex; align-items: center; justify-content: center; gap: 18px; padding: 6px 16px max(12px, env(safe-area-inset-bottom)); font-size: 17px; color: var(--muted); }
+.nav button { font: inherit; font-size: 26px; line-height: 1; width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; }
+.nav button:disabled { opacity: .25; cursor: default; }
+.count { min-width: 5.5em; text-align: center; }
+@media (prefers-reduced-motion: reduce) { .track { scroll-behavior: auto; } }
+
+.nav .count b { color: #e4572e; }
+</style>
+</head>
+<body>
+<svg aria-hidden="true" width="0" height="0" style="position: absolute; left: 0; top: 0"><defs><filter id="ink" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="wob"></feTurbulence><feDisplacementMap in="SourceGraphic" in2="wob" scale="5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></defs></svg>
+<div class="bar">
+  <a href="./" aria-label="back to the shelf">← shelf</a>
+  <span class="title">wild errors</span>
+  <a class="pdf" href="../pdfs/wild-errors.pdf" download>pdf</a>
+</div>
+<main class="track" id="track" aria-label="wild errors" tabindex="-1">
+  <section class="slide" role="group" aria-roledescription="page" aria-label="cover"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 26px 30px 30px 24px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; text-align: center">
+<p style="margin: 0; font-size: 18px">a pocket field guide to</p>
+<h1 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 58px; line-height: 0.95; font-weight: 400">WILD ERRORS</h1>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="112" viewBox="0 0 224 136" role="img" aria-label="a diamond-shaped crossing sign with a big hairy cryptid striding across it and a 404 plate below" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M112 116 L112 132"></path>
+<path d="M60 132 L164 132"></path>
+<path d="M68 132 l-3 -10 l5 5 l2 -8 l3 13 M146 132 l2 -11 l4 7 l3 -9 l2 13" stroke-width="2.4"></path>
+<path d="M112 4 L160 52 L112 100 L64 52 Z" fill="#e4572e" fill-opacity="0.45"></path>
+<path d="M112 13 L151 52 L112 91 L73 52 Z" stroke-width="1.6"></path>
+<g transform="translate(112 54) scale(0.82) rotate(10) translate(-112 -54)">
+<circle cx="119" cy="27" r="6.5" fill="#1b1b1b"></circle>
+<path d="M104 36 q9 -9 18 -2 q3 12 -1 27 q-9 4 -17 0 q-4 -13 0 -25 Z" fill="#1b1b1b"></path>
+<path d="M104 38 l-4 4 l3 2 l-4 5 l4 1 l-3 5" stroke-width="2"></path>
+<path d="M118 40 l12 15" stroke-width="5.5"></path>
+<path d="M106 40 l-12 16" stroke-width="5.5"></path>
+<path d="M118 60 l9 17 l6 0" stroke-width="6.5"></path>
+<path d="M107 60 l-10 15 l-5 2" stroke-width="6.5"></path>
+</g>
+<rect x="88" y="100" width="48" height="18" rx="3" fill="#ffffff" stroke-width="2.4"></rect>
+<text x="112" y="114" text-anchor="middle" font-family="Gochi Hand, cursive" font-size="15" fill="#1b1b1b" stroke="none">404</text>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">how to spot &amp; identify the numbers that pop up when the web has something to tell you</p>
+<p style="margin: auto 0 0; font-size: 13px; color: #555">field guides to the digital wild · no. 2</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 2 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 30px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">how to identify</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">every one of them carries a number. look at the first digit: it tells you the family.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="92" viewBox="0 0 224 104" role="img" aria-label="a trail signpost with four arms: 2xx, 3xx, 4xx, 5xx" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M112 4 L112 102 M84 102 L140 102"></path>
+<path d="M116 6 L166 6 L176 15 L166 24 L116 24 Z" fill="#e4572e" fill-opacity="0.3"></path>
+<path d="M108 29 L58 29 L48 38 L58 47 L108 47 Z" fill="#e4572e" fill-opacity="0.3"></path>
+<path d="M116 52 L166 52 L176 61 L166 70 L116 70 Z" fill="#e4572e" fill-opacity="0.3"></path>
+<path d="M108 75 L58 75 L48 84 L58 93 L108 93 Z" fill="#e4572e" fill-opacity="0.3"></path>
+<g font-family="Gochi Hand, cursive" font-size="15" fill="#1b1b1b" stroke="none" text-anchor="middle"><text x="143" y="20">2xx</text><text x="81" y="43">3xx</text><text x="143" y="66">4xx</text><text x="81" y="89">5xx</text></g>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.3"><b>2</b> happy. it worked.<br><b>3</b> migratory. it moved.<br><b>4</b> the problem’s on your side.<br><b>5</b> the server tripped.</p>
+<p style="margin: 0; font-size: 14px; line-height: 1.2; color: #444">(1xx are the larvae. you’ll almost never see one.)</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 2 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 3 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the 301</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Redirectus migratorius</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="94" viewBox="0 0 224 100" role="img" aria-label="a bird flying away past a signpost that says moved" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M10 96 L104 96"></path>
+<path d="M58 50 L58 96"></path>
+<path d="M24 28 L86 28 L98 39 L86 50 L24 50 Z" fill="#e4572e" fill-opacity="0.3"></path>
+<text x="58" y="45" text-anchor="middle" font-family="Gochi Hand, cursive" font-size="16" fill="#1b1b1b" stroke="none">moved</text>
+<path d="M118 44 l-14 0 M124 54 l-14 0" stroke-width="2"></path>
+<path d="M148 40 l-12 -6 l3 8 l-3 8 l12 -6"></path>
+<ellipse cx="164" cy="40" rx="20" ry="11" fill="#e4572e" fill-opacity="0.35"></ellipse>
+<path d="M156 36 q8 -26 22 -10 Z" fill="#ffffff"></path>
+<circle cx="184" cy="32" r="8" fill="#ffffff"></circle>
+<path d="M191 30 l9 3 l-9 3"></path>
+<circle cx="186" cy="30" r="1.8" fill="#1b1b1b"></circle>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">flew away and never came back. but it’s polite: it leaves a note saying where it went, and your browser follows without a word.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> old addresses, sites that moved to https</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> ★☆☆☆☆<br><span style="font-size: 14px; color: #444">(it tells you where it went)</span></p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 3 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 4 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the 404</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Clientus absens</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="94" viewBox="0 0 224 100" role="img" aria-label="a snapshot of the woods marked 404, with only a dashed outline where the hairy cryptid should be, beside its crossing sign" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<g transform="rotate(-4 80 52)">
+<rect x="26" y="6" width="104" height="90" rx="2" fill="#ffffff" stroke-width="2.4"></rect>
+<rect x="34" y="13" width="88" height="62" fill="#e4572e" fill-opacity="0.18" stroke-width="1.8"></rect>
+<path d="M42 70 l9 -26 l9 26 Z M102 70 l8 -20 l8 20 Z" fill="#ffffff" stroke-width="1.8"></path>
+<path d="M34 70 h88" stroke-width="1.6"></path>
+<g transform="translate(80 44) scale(0.62) rotate(10) translate(-112 -50)" stroke-width="3" stroke-dasharray="3 4">
+<circle cx="119" cy="27" r="6.5"></circle>
+<path d="M104 36 q9 -9 18 -2 q3 12 -1 27 q-9 4 -17 0 q-4 -13 0 -25 Z"></path>
+<path d="M118 40 l12 15 M106 40 l-12 16 M118 60 l9 17 l6 0 M107 60 l-10 15 l-5 2"></path>
+</g>
+<text x="78" y="90" text-anchor="middle" font-family="Gochi Hand, cursive" font-size="14" fill="#1b1b1b" stroke="none">404?</text>
+</g>
+<path d="M190 52 L190 98" stroke-width="2.6"></path>
+<path d="M190 10 L212 32 L190 54 L168 32 Z" fill="#e4572e" fill-opacity="0.45" stroke-width="2.4"></path>
+<g transform="translate(190 33) scale(0.36) rotate(10) translate(-112 -50)">
+<circle cx="119" cy="27" r="6.5" fill="#1b1b1b"></circle>
+<path d="M104 36 q9 -9 18 -2 q3 12 -1 27 q-9 4 -17 0 q-4 -13 0 -25 Z" fill="#1b1b1b"></path>
+<path d="M118 40 l12 15 M106 40 l-12 16" stroke-width="5.5"></path>
+<path d="M118 60 l9 17 l6 0 M107 60 l-10 15 l-5 2" stroke-width="6.5"></path>
+</g>
+<rect x="177" y="60" width="26" height="12" rx="2" fill="#ffffff" stroke-width="1.8"></rect>
+<text x="190" y="70" text-anchor="middle" font-family="Gochi Hand, cursive" font-size="10" fill="#1b1b1b" stroke="none">404</text>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">you’ve seen its sign a hundred times. but go looking for the page and you only find the spot where it should be. (it isn’t hiding. there’s just nothing there.)</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> links from 2009, typos</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> ☆☆☆☆☆ <span style="white-space: nowrap">(nothing to catch)</span></p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 4 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 5 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 30px 30px 24px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the 403</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Clientus prohibitus</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="94" viewBox="0 0 224 100" role="img" aria-label="a calm dog sitting beside a closed garden gate" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M14 96 L214 96"></path>
+<path d="M124 22 L124 96 M204 22 L204 96"></path>
+<rect x="130" y="36" width="68" height="56" fill="#e4572e" fill-opacity="0.18"></rect>
+<path d="M144 36 L144 92 M158 36 L158 92 M172 36 L172 92 M186 36 L186 92" stroke-width="2.4"></path>
+<circle cx="124" cy="20" r="4" fill="#ffffff"></circle>
+<circle cx="204" cy="20" r="4" fill="#ffffff"></circle>
+<path d="M44 86 q-16 -4 -14 -20"></path>
+<ellipse cx="66" cy="70" rx="22" ry="24" fill="#e4572e" fill-opacity="0.35"></ellipse>
+<path d="M74 84 L74 96 M86 82 L86 96"></path>
+<path d="M64 50 q12 7 24 0" stroke-width="2.4"></path>
+<circle cx="78" cy="36" r="14" fill="#ffffff"></circle>
+<ellipse cx="92" cy="40" rx="9" ry="6.5" fill="#ffffff"></ellipse>
+<circle cx="99" cy="38" r="2.6" fill="#1b1b1b"></circle>
+<circle cx="80" cy="32" r="2" fill="#1b1b1b"></circle>
+<path d="M70 24 q-12 4 -8 20 q6 -2 8 -10 Z" fill="#e4572e" fill-opacity="0.6"></path>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">guards the gate. its cousin the 401 asks “who are you?” the 403 knows exactly who you are. the answer is still no.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> admin pages, the cookie jar</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> don’t. it’s doing its job.</p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 5 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 6 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 30px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">the 503</h2>
+<p style="margin: 0; font-size: 14px; font-style: italic; color: #444">Servus hibernans</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="94" viewBox="0 0 224 100" role="img" aria-label="a bear asleep in a cave, with a back soon sign over the entrance" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M12 96 q16 -84 100 -92 q84 8 100 92 Z" fill="#e4572e" fill-opacity="0.3"></path>
+<path d="M50 96 q0 -64 62 -64 q62 0 62 64 Z" fill="#ffffff"></path>
+<path d="M6 96 L218 96"></path>
+<ellipse cx="124" cy="80" rx="40" ry="16" fill="#e4572e" fill-opacity="0.5"></ellipse>
+<circle cx="70" cy="65" r="5.5" fill="#e4572e" fill-opacity="0.5"></circle>
+<circle cx="92" cy="64" r="5.5" fill="#e4572e" fill-opacity="0.5"></circle>
+<circle cx="81" cy="79" r="15" fill="#f8c9bb"></circle>
+<path d="M72 76 q3 3 6 0 M84 76 q3 3 6 0" stroke-width="2.2"></path>
+<ellipse cx="81" cy="87" rx="6.5" ry="4.5" fill="#ffffff" stroke-width="2.2"></ellipse>
+<circle cx="81" cy="85" r="2" fill="#1b1b1b"></circle>
+<path d="M106 52 l7 0 l-7 8 l7 0 M118 42 l9 0 l-9 10 l9 0 M132 34 l11 0 l-11 12 l11 0" stroke-width="2.2"></path>
+<rect x="84" y="8" width="56" height="20" rx="3" fill="#ffffff" stroke-width="2.4"></rect>
+<text x="112" y="22" text-anchor="middle" font-family="Patrick Hand, sans-serif" font-size="12" fill="#1b1b1b" stroke="none">back soon</text>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.22">too tired, too busy, or out for maintenance. leave it alone and it’s usually back by morning. (poking it makes it grumpier.)</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.2"><b>habitat:</b> launch days, the minute tickets go on sale</p>
+<p style="margin: 0; font-size: 15px"><b>catch difficulty:</b> ★★☆☆☆<br><span style="font-size: 14px; color: #444">(just wait)</span></p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 6 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 7 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 5px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">field notes: the rarest one</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.25">april 1, 1998. someone wrote a serious-looking standard for brewing coffee over the internet. ask a teapot for coffee and it answers:</p>
+<p style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 20px; line-height: 1.05; text-align: center">418, i’m a teapot.</p>
+<svg style="flex-shrink: 0; max-width: 100%" width="224" height="72" viewBox="0 0 224 100" role="img" aria-label="a teapot with a ribbon on its lid, and a little webcam on a stand watching it" fill="none" stroke="#1b1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><g filter="url(#ink)">
+<path d="M64 96 L120 96"></path>
+<path d="M60 64 q-18 -4 -24 -22 l7 -3 q6 13 19 15"></path>
+<path d="M124 52 q22 0 20 18 q-2 16 -20 14"></path>
+<ellipse cx="92" cy="68" rx="34" ry="28" fill="#e4572e" fill-opacity="0.35"></ellipse>
+<path d="M72 42 q20 -14 40 0 Z" fill="#ffffff"></path>
+<circle cx="92" cy="30" r="4" fill="#ffffff"></circle>
+<path d="M92 27 l-11 -7 l0 11 Z M92 27 l11 -7 l0 11 Z" fill="#e4572e" fill-opacity="0.8" stroke-width="2"></path>
+<path d="M162 46 L130 56" stroke-width="1.6" stroke-dasharray="3 5"></path>
+<rect x="170" y="34" width="30" height="22" rx="4" fill="#ffffff"></rect>
+<circle cx="170" cy="45" r="7" fill="#ffffff"></circle>
+<circle cx="170" cy="45" r="2.8" fill="#1b1b1b"></circle>
+<path d="M185 56 L185 82 M185 82 l-11 14 M185 82 l11 14"></path>
+<path d="M200 45 q16 8 12 50" stroke-width="2"></path>
+</g></svg>
+<p style="margin: 0; font-size: 16px; line-height: 1.25">in 2017, engineers tried to remove it. people protested until it stayed. today it’s officially reserved: a <span style="white-space: nowrap">protected species.</span></p>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555">— 7 —</p>
+</div></div></section>
+  <section class="slide" role="group" aria-roledescription="page" aria-label="page 8 of 8"><div class="paper"><div style="box-sizing: border-box; width: 264px; height: 408px; padding: 22px 24px 30px 24px; display: flex; flex-direction: column; gap: 8px; overflow: hidden">
+<h2 style="margin: 0; font-family: 'Gochi Hand', cursive; font-size: 28px; line-height: 1; font-weight: 400; text-wrap: balance">my sightings</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.45">☐ 200 <span style="font-size: 14px; color: #444">(so common nobody looks twice)</span><br>☐ 301 &nbsp;☐ 403 &nbsp;☐ 503<br>☐ 404 <span style="font-size: 14px; color: #444">(if you spotted one, you didn’t.)</span><br>☐ 418 <span style="font-size: 14px; color: #444">(rare!)</span><br>☐ ______ <span style="font-size: 14px; color: #444">(go find more.)</span></p>
+<div style="border: 2px solid #1b1b1b; border-radius: 6px; padding: 10px 9px; font-size: 15px; line-height: 1.25; background: #e4572e33"><b>if you meet one:</b><br><b>4xx:</b> check what you asked for, and whether you’re allowed.<br><b>5xx:</b> it’s not you. wait, then <span style="white-space: nowrap">try again.</span></div>
+<p style="margin: auto 0 0; font-size: 13px; text-align: center; color: #555; line-height: 1.35">made with ink &amp; a slow connection<br>after RFC 9110, 2022 &amp; RFC 2324, 1998<br>by jerry gay</p>
+</div></div></section>
+  <section class="slide" role="group" aria-label="the end"><div class="end">
+    <h2>the end.</h2>
+    
+    <a href="./">back to the shelf<small>all the zines</small></a>
+    <a href="../pdfs/wild-errors.pdf" download>print your own<small>one sheet, one cut, a few folds</small></a>
+  </div></section>
+</main>
+<nav class="nav" aria-label="pages">
+  <button id="prev" aria-label="previous page">‹</button>
+  <span class="count" id="count" aria-live="polite">cover</span>
+  <button id="next" aria-label="next page">›</button>
+</nav>
+<script>
+(() => {
+  const track = document.getElementById('track');
+  const slides = [...track.children], last = slides.length - 1;
+  const label = i => i === 0 ? 'cover' : i === last ? 'the end' : (i + 1) + ' / 8';
+  const prev = document.getElementById('prev'), next = document.getElementById('next'), count = document.getElementById('count');
+  let cur = 0;
+  function fit() {
+    const w = track.clientWidth - 32, h = track.clientHeight - 16;
+    document.documentElement.style.setProperty('--z', Math.min(w / 264, h / 408, 2.4).toFixed(4));
+  }
+  function show(i) {
+    cur = i;
+    count.textContent = label(i);
+    prev.disabled = i === 0; next.disabled = i === last;
+    history.replaceState(null, '', i ? '#p' + (i + 1) : location.pathname);
+  }
+  function go(i, smooth = true) {
+    i = Math.max(0, Math.min(last, i));
+    track.scrollTo({ left: i * track.clientWidth, behavior: smooth ? 'smooth' : 'instant' });
+    show(i);
+  }
+  let t;
+  track.addEventListener('scroll', () => {
+    clearTimeout(t);
+    t = setTimeout(() => { const i = Math.round(track.scrollLeft / track.clientWidth); if (i !== cur) show(i); }, 60);
+  }, { passive: true });
+  track.addEventListener('click', e => {
+    if (e.target.closest('a') || getSelection().toString()) return;
+    go(cur + (e.clientX < innerWidth / 3 ? -1 : 1));
+  });
+  prev.onclick = () => go(cur - 1);
+  next.onclick = () => go(cur + 1);
+  addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(cur + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(cur - 1); }
+    else if (e.key === 'Home') go(0); else if (e.key === 'End') go(last);
+  });
+  addEventListener('resize', () => { fit(); go(cur, false); });
+  fit();
+  const m = location.hash.match(/^#p(\d+)$/);
+  go(m ? +m[1] - 1 : 0, false);
+})();
+</script>
+</body>
+</html>
