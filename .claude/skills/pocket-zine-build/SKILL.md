@@ -11,14 +11,11 @@ start only after the 8-page beat sheet is agreed with jerry (pocket-zine-story).
 
 - `sources/<name>.dc.html` holds every sheet's source. **start a new zine by copying an existing source** (`little-packet.dc.html` and `genie-in-the-light-switch.dc.html` are the cleanest) and replacing the content. every format value below is already right in them.
 - `pdfs/<name>.pdf` holds the print files, `covers/<name>.png` the site covers, `index.html` is the site.
-- the sheets also live as artboards on Design canvases, where jerry looks at and edits them. **one canvas per collection**, named for the collection, with its zines as artboards in shelf order (`Main.dc.html` is no. 1):
-  - once upon a model: https://claude.ai/artifact/NrxC9fSXmhNd5rXfEKwGo7
-  - true-ish tales of the internet: https://claude.ai/artifact/REBbM8d3pj7Cwn31jes3aL
-  - tales of software gone sideways: https://claude.ai/artifact/3KJ47Vt1eqpFVxa5YvqQuE
-  - field guides to the digital wild: https://claude.ai/artifact/9j2KkQhFbUszZCKqLmgnZH
-
-  add a new zine as an artboard on its collection's canvas, so jerry can review it there. a new collection gets a new canvas with the same name as its shelf (add it to this list). `sources/` is the copy of record in git, so keep the two in sync.
-  - the old mixed "devcon hopewell mini-zines" canvas (https://claude.ai/artifact/XUkVFWG5BA1689WQi6sr1x) still holds older copies plus two sheets not on any shelf yet (tiny habits, rapunzel). don't add new zines there.
+- the sheets also show on **one Design canvas, "pocket zines"**: https://claude.ai/artifact/Y47d5Q9ptmnnJbERjy5igk. one row per shelf, titled with the shelf name, zines in shelf order (`Main.dc.html` is the first zine on the site). **the canvas is a viewer, never the master copy.** `sources/` is. rebuild the whole canvas from `sources/` and `index.html` every time anything ships:
+  - `python3 .claude/skills/pocket-zine-build/scripts/build_canvas.py OUT_DIR`, then `publish_files` (mode patch) every file in `OUT_DIR/project/` to the canvas, and remove any `project/*.dc.html` on the canvas that the script didn't write.
+  - before rebuilding, compare each artboard on the canvas with its source (`list_files` sha256 vs `sha256sum sources/*`). if one differs and isn't an older copy, jerry edited it in Design: copy that edit into `sources/` first, or ask.
+  - a zine under review isn't on the site yet, so it isn't on the canvas: review it from the pdf and `pages.png`.
+  - the old per-collection canvases and the "devcon hopewell mini-zines" canvas are retired and out of date. never update them. (the devcon one still holds the only copies of two unshelved sheets: tiny habits and rapunzel.)
 - `.claude/skills/pocket-zine-build/scripts/zine.py` renders and checks a sheet. its fonts are bundled.
 
 ## the sheet format
@@ -84,10 +81,11 @@ then **look at `pages.png` yourself**: clipped text, collisions, drawings that d
 ## review, then publish
 
 1. send jerry the pdf (and `pages.png`) for review. iterate. **publish nothing until he says the review is done.**
-2. update the canvas artboard and `sources/`.
+2. put the final sheet in `sources/`.
 3. `pdf` and `cover` into `pdfs/` and `covers/`.
 4. rebuild the all-in-one packet in `pdfs/` (every zine's pdf appended, in shelf order). it is always `pdfs/pocket-zines-all.pdf`. the site never states how many zines there are (no count in the lede, meta description or button), so a new zine never means renaming anything.
 5. in `index.html`, add a card to the right shelf, copying its neighbors' markup: cover image, series line (`<collection> · no. N`), title, a one-sentence blurb that sets up the story without spoiling it, and a download button. a new collection gets a new shelf section. add the source to the footer's "after …" credits.
 6. rebuild the unlisted reading room in `backroom/` (a phone-friendly web view of every zine on the site, built from `index.html` and `sources/`): every `zine.py` command does this on its own, so after editing `index.html` just run `zine.py backroom`. never link to it from the public site.
 7. serve locally (`python3 -m http.server`) and check that every link and image returns 200 and there's no horizontal scroll at 390px wide.
 8. commit and push to `main`. GitHub Pages redeploys on its own. confirm on the live site.
+9. rebuild the "pocket zines" canvas from `sources/` (see where things live).
